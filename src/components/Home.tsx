@@ -2,7 +2,8 @@ import ICAL from "ical.js";
 import { addDays, format } from "date-fns";
 import { TZDate } from "@date-fns/tz";
 import type { JSX } from "react/jsx-runtime";
-import { getLangFromUrl, getLocale } from "../i18n/utils";
+import { getLocale } from "../i18n/utils";
+import { InferEntrySchema, Render, RenderedContent } from "astro:content";
 
 const upcomingEvents = async () => {
   const returnEvents: {
@@ -101,42 +102,53 @@ const Events = ({
   );
 };
 
-export default async function Home({ lang }: { lang: string }) {
+export default async function Home({
+  lang,
+  news,
+}: {
+  lang: string;
+  news: {
+    id: string;
+    render(): Render[".md"];
+    slug: string;
+    body: string;
+    collection: "news";
+    data: InferEntrySchema<"news">;
+    rendered?: RenderedContent;
+    filePath?: string;
+  }[];
+}) {
   const events = await upcomingEvents();
 
   const EventComponent = <Events events={events} lang={lang} />;
 
-  const lastChange = new TZDate(2024, 10, 5);
-
   if (lang === "de") {
-    return (
-      <HomeDe events={EventComponent} lastChange={lastChange} lang={lang} />
-    );
+    return <HomeDe events={EventComponent} news={news} />;
   } else {
-    return (
-      <HomeEn events={EventComponent} lastChange={lastChange} lang={lang} />
-    );
+    return <HomeEn events={EventComponent} news={news} />;
   }
 }
 
 const HomeDe = ({
   events,
-  lastChange,
-  lang,
+  news,
 }: {
   events: JSX.Element;
-  lastChange: TZDate;
-  lang: string;
+  news: {
+    id: string;
+    render(): Render[".md"];
+    slug: string;
+    body: string;
+    collection: "news";
+    data: InferEntrySchema<"news">;
+    rendered?: RenderedContent;
+    filePath?: string;
+  }[];
 }) => {
+  news = news.filter((item) => item.slug.startsWith("de/"));
+
   return (
     <div className="prose dark:prose-invert">
-      <div className="text-center">
-        <em>
-          Letzte Änderung:{" "}
-          {format(lastChange, "P", { locale: getLocale("de") })}
-        </em>
-      </div>
-
       <p>
         Der Chaostreff Osnabrück e.V. ist eine lockere Gruppe von Leuten mit
         Interesse in den Bereichen Sicherheit, Kryptografie, alternative
@@ -148,6 +160,24 @@ const HomeDe = ({
         Interessierte sind bei unseren regelmäßigen Treffen jederzeit herzlich
         willkommen.
       </p>
+
+      <h3>Neuigkeiten</h3>
+
+      <ul>
+        {news.map((item) => {
+          const [lang, ...slug] = item.slug.split("/");
+          console.log(lang, slug);
+
+          return (
+            <li key={item.slug}>
+              <a href={`/${lang}/news/${slug.join("/")}/`}>
+                {new Date(item.data.date).toLocaleDateString()} -{" "}
+                {item.data.title}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
 
       <dl>
         <dt>Regelmäßige Treffen</dt>
@@ -205,7 +235,6 @@ const HomeDe = ({
               >
                 öffentlichen Jabber-MUC
               </a>
-              .
             </li>
             <li>
               Der{" "}
@@ -263,11 +292,6 @@ const HomeDe = ({
         <dt>Projekte</dt>
         <dd>
           <ul>
-            <li>
-              <a href={`${lang}/pm-mastodon`}>
-                Pressemitteilung: Eröffnung osna.social
-              </a>
-            </li>
             {/* <!--
 		<li><a href="https://codingchaos.chaostreff-osnabrueck.de/">codingchaOS</a></li>
 		--> */}
@@ -306,21 +330,24 @@ const HomeDe = ({
 
 const HomeEn = ({
   events,
-  lastChange,
-  lang,
+  news,
 }: {
   events: JSX.Element;
-  lastChange: TZDate;
-  lang: string;
+  news: {
+    id: string;
+    render(): Render[".md"];
+    slug: string;
+    body: string;
+    collection: "news";
+    data: InferEntrySchema<"news">;
+    rendered?: RenderedContent;
+    filePath?: string;
+  }[];
 }) => {
+  news = news.filter((item) => item.slug.startsWith("en/"));
+
   return (
     <div className="prose dark:prose-invert">
-      <div className="text-center">
-        <em>
-          Last amended: {format(lastChange, "P", { locale: getLocale("en") })}
-        </em>
-      </div>
-
       <p>
         The Chaostreff Osnabrück e.V. is a group of people interested in topics
         like security, cryptography, alternative operating systems, free (libre)
@@ -330,6 +357,24 @@ const HomeEn = ({
       <p>
         People interested in our topics are welcome at our regular meetings.
       </p>
+
+      <h3>News</h3>
+
+      <ul>
+        {news.map((item) => {
+          const [lang, ...slug] = item.slug.split("/");
+          console.log(lang, slug);
+
+          return (
+            <li key={item.slug}>
+              <a href={`/${lang}/news/${slug.join("/")}/`}>
+                {new Date(item.data.date).toLocaleDateString()} -{" "}
+                {item.data.title}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
 
       <dl>
         <dt>Regular meetings</dt>
@@ -445,11 +490,6 @@ const HomeEn = ({
         <dt>Projects</dt>
         <dd>
           <ul>
-            <li>
-              <a href={`${lang}/pm-mastodon`}>
-                Press release: Opening of osna.social (German)
-              </a>
-            </li>
             {/* <!--
 			<li><a href="https://codingchaos.chaostreff-osnabrueck.de">codingchaOS</a></li>
 		--> */}
