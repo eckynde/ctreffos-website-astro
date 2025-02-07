@@ -276,16 +276,6 @@ const HomeDe = ({
                 @chaostreff_osnabrueck
               </a>
             </li>
-            <li>
-              X (ehemals Twitter):{" "}
-              <a
-                href="https://twitter.com/ctreffos"
-                rel="noreferer"
-                target="_blank"
-              >
-                @ctreffos
-              </a>
-            </li>
           </ul>
         </dd>
 
@@ -472,16 +462,6 @@ const HomeEn = ({
                 target="_blank"
               >
                 @chaostreff_osnabrueck
-              </a>
-            </li>
-            <li>
-              X (formerly Twitter):{" "}
-              <a
-                href="https://twitter.com/ctreffos"
-                rel="noreferer"
-                target="_blank"
-              >
-                @ctreffos
               </a>
             </li>
           </ul>
