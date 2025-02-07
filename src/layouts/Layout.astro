@@ -29,8 +29,15 @@ const t = useTranslations(lang);
             />
           </header>
         </a>
+        <nav class="flex flex-col sm:flex-row gap-3 py-8">
+          <a href={`/${lang}`}>{t("nav.news")}</a>
+          <a href={`/${lang}/about`}>{t("nav.about")}</a>
+          <a href={`/${lang}/hackspace`}>{t("nav.hackspace")}</a>
+          <a href={`/${lang}/club`}>{t("nav.club")}</a>
+          <a href={`/${lang}/donate`}>{t("nav.donate")}</a>
+        </nav>
         <main
-          class="flex flex-col gap-8 md:max-w-2xl row-start-2 items-center sm:items-start"
+          class="flex flex-col gap-8 md:max-w-2xl row-start-2 items-center sm:items-start prose prose-invert"
         >
           <slot />
         </main>
@@ -49,9 +56,8 @@ const t = useTranslations(lang);
             <a href={`/${lang}/legal-notice`}>
               {t("nav.legal-notice")}
             </a>
-            <a href={`/${lang}/donate`}>
-              {t("nav.donate")}
-            </a>
+            <a href={`/${lang}/faq`}>{t("nav.faq")}</a>
+            <a href={`/${lang}/contact`}>{t("nav.contact")}</a>
           </div>
 
           <div class="flex gap-6 justify-center">

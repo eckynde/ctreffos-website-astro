@@ -268,12 +268,6 @@ const HomeDe = ({
                 Pressemitteilung: Eröffnung osna.social
               </a>
             </li>
-            <li>
-              <a href={`${lang}/chaostalks`}>chaOStalks</a>
-            </li>
-            <li>
-              <a href={`${lang}/chaos-colloquia`}>Chaos Colloquia</a>
-            </li>
             {/* <!--
 		<li><a href="https://codingchaos.chaostreff-osnabrueck.de/">codingchaOS</a></li>
 		--> */}
@@ -455,12 +449,6 @@ const HomeEn = ({
               <a href={`${lang}/pm-mastodon`}>
                 Press release: Opening of osna.social (German)
               </a>
-            </li>
-            <li>
-              <a href={`${lang}/chaostalks`}>chaOStalks</a>
-            </li>
-            <li>
-              <a href={`${lang}/chaos-colloquia`}>Chaos Colloquia</a>
             </li>
             {/* <!--
 			<li><a href="https://codingchaos.chaostreff-osnabrueck.de">codingchaOS</a></li>
