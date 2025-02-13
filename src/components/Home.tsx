@@ -87,7 +87,7 @@ const Events = ({
       <ul>
         {events.map((event, index) => (
           <li key={index}>
-            <div>
+            <div className="font-bold">
               {format(event.startDate, "Pp", {
                 locale: getLocale(lang),
               })}
@@ -149,171 +149,95 @@ const HomeDe = ({
 
   return (
     <div className="prose dark:prose-invert">
+      <h1>Chaostreff Osnabrück e.V. – All creatures welcome!</h1>
       <p>
-        Der Chaostreff Osnabrück e.V. ist eine lockere Gruppe von Leuten mit
-        Interesse in den Bereichen Sicherheit, Kryptografie, alternative
-        Betriebssysteme, freie (libre) Software, Netzpolitik und vielen weiteren
-        Themen.
+        Fasziniert von Sicherheit, alternativen Betriebssystemen, freier (libre)
+        Software und Netzpolitik? Willkommen beim{" "}
+        <b>Chaostreff Osnabrück e.V.</b>, deiner Anlaufstelle für alle, die die
+        Welt hacken und gestalten wollen.
       </p>
-
       <p>
-        Interessierte sind bei unseren regelmäßigen Treffen jederzeit herzlich
-        willkommen.
+        <b>Unsere Mission:</b> Wir sind eine Gruppe von Hacker*innen und
+        Technikfreaks, die regelmäßig zusammenkommen, um Ideen zu teilen und
+        Projekte zu entwickeln. Bei uns sind alle willkommen – ob erfahren oder
+        neugierig.
       </p>
-
+      <p>
+        <b>Join us!</b> Besuche unsere Treffen und sei Teil unserer chaotischen
+        Truppe. Wir freuen uns auf dich!
+      </p>
       <h3>Neuigkeiten</h3>
-
       <ul>
-        {news.map((item) => {
-          const [lang, ...slug] = item.slug.split("/");
-          console.log(lang, slug);
+        {news
+          .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+          .map((item) => {
+            const [lang, ...slug] = item.slug.split("/");
 
-          return (
-            <li key={item.slug}>
-              <a href={`/${lang}/news/${slug.join("/")}/`}>
-                {new Date(item.data.date).toLocaleDateString()} -{" "}
-                {item.data.title}
-              </a>
-            </li>
-          );
-        })}
+            return (
+              <li key={item.slug}>
+                <a href={`/${lang}/news/${slug.join("/")}/`}>
+                  {new Date(item.data.date).toLocaleDateString(lang, {
+                    dateStyle: "medium",
+                  })}{" "}
+                  - {item.data.title}
+                </a>
+              </li>
+            );
+          })}
       </ul>
-
-      <dl>
-        <dt>Regelmäßige Treffen</dt>
-        <dd>
-          Jeden zweiten Donnerstag treffen wir uns um 19:00 Uhr im{" "}
+      <h3>Regelmäßige Treffen</h3>
+      <dd>
+        Jeden Donnerstag treffen wir uns um 19:00 Uhr im{" "}
+        <a href="/de/about#anfahrt">
+          AStA der Universität Osnabrück, Alte Münze 12, 49074 Osnabrück
+        </a>{" "}
+        in unserem Hackspace Rabbithole.
+      </dd>
+      {events}
+      <h3>Veranstaltungen</h3>
+      <dd>
+        Alle Termine der nächsten Monate können online angesehen, als iCalendar
+        abonniert oder als .ics-Datei heruntergeladen werden:{" "}
+        <a
+          href="https://vc1.brainfact.de/nextcloud/apps/calendar/p/LqyiwT8aRjkbLako"
+          rel="noreferer"
+          target="_blank"
+        >
+          zu unserem Kalender
+        </a>
+        .
+      </dd>
+      <h3>Chatraum</h3>
+      <dd>
+        Wir chatten regelmäßig in unserem{" "}
+        <a
+          href="https://matrix.to/#/#public_ctreffos:matrix.drpetervoigt.de"
+          rel="noreferer"
+          target="_blank"
+        >
+          öffentliche Matrix-Raum
+        </a>
+        .
+      </dd>
+      <h3>Soziale Medien</h3>
+      <ul>
+        <li>
+          Fediverse (Mastodon):{" "}
           <a
-            href="https://www.openstreetmap.org/?mlat=52.27274&mlon=8.04577#map=19/52.27274/8.04577"
-            rel="noreferer"
+            href="https://chaos.social/@chaostreff_osnabrueck"
+            rel="me"
             target="_blank"
           >
-            AStA der Universität Osnabrück, Alte Münze 12, 49074 Osnabrück
-          </a>{" "}
-          in unserem Hackspace Rabbithole.
-        </dd>
-
-        <dt>Kalender</dt>
-        <dd>
-          Alle Termine der nächsten Monate können online angesehen, als
-          iCalendar abonniert oder als .ics-Datei heruntergeladen werden:{" "}
-          <a
-            href="https://vc1.brainfact.de/nextcloud/apps/calendar/p/LqyiwT8aRjkbLako"
-            rel="noreferer"
-            target="_blank"
-          >
-            zu unserem Kalender
+            @chaostreff_osnabrueck
           </a>
-          .
-        </dd>
-
-        {events}
-
-        <dt>E-Mail</dt>
-        <dd>
-          <ul>
-            <li>
-              <a href="mailto:info@chaostreff-osnabrueck.de">Kontakt</a>
-            </li>
-            <li>
-              <a href="mailto:presse@chaostreff-osnabrueck.de">
-                Presseanfragen
-              </a>
-            </li>
-          </ul>
-        </dd>
-
-        <dt>Öffentlicher Chatraum</dt>
-        <dd>
-          <ul>
-            <li>
-              Besucher sind willkommen beim{" "}
-              <a
-                href="xmpp:public@conference.jabber.chaostreff-osnabrueck.de?join"
-                rel="noreferer"
-                target="_blank"
-              >
-                öffentlichen Jabber-MUC
-              </a>
-            </li>
-            <li>
-              Der{" "}
-              <a
-                href="https://matrix.to/#/#public_ctreffos:matrix.drpetervoigt.de"
-                rel="noreferer"
-                target="_blank"
-              >
-                öffentliche Matrix-Raum
-              </a>{" "}
-              wird mit dem öffentlichen Jabber-MUC bidirektional gespiegelt.
-            </li>
-          </ul>
-        </dd>
-
-        <dt>Mailingliste</dt>
-        <dd>
-          Für einen ausführlicheren Austausch zu unterschiedlichen Themen steht{" "}
-          <a
-            href="https://listserv.chaostreff-osnabrueck.de/sympa/arc/ctreffos-public/2023-02/msg00000.html"
-            rel="noreferer"
-            target="_blank"
-          >
-            unsere öffentliche Mailingliste
-          </a>{" "}
-          zur Verfügung.
-        </dd>
-
-        <dt>Soziale Medien</dt>
-        <dd>
-          <ul>
-            <li>
-              Fediverse (Mastodon):{" "}
-              <a
-                href="https://chaos.social/@chaostreff_osnabrueck"
-                rel="me"
-                target="_blank"
-              >
-                @chaostreff_osnabrueck
-              </a>
-            </li>
-          </ul>
-        </dd>
-
-        <dt>Projekte</dt>
-        <dd>
-          <ul>
-            {/* <!--
-		<li><a href="https://codingchaos.chaostreff-osnabrueck.de/">codingchaOS</a></li>
-		--> */}
-            <li>
-              <a href="/downloads/offenerBrief_offeneDaten.pdf">
-                Stellungnahme zur Informationsfreiheitssatzung
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://niedersachsentrojaner.de/"
-                rel="noreferer"
-                target="_blank"
-              >
-                #noNPOG Bündnis
-              </a>
-            </li>
-            <li>
-              <a href="/downloads/brief_kontaktnachverfolgungsapps.pdf">
-                Offener Brief Corona-Kontaktnachverfolgungs-Apps
-              </a>
-            </li>
-          </ul>
-        </dd>
-
-        <dt>GitHub</dt>
-        <dd>
+        </li>
+        <li>
+          GitHub:{" "}
           <a href="https://github.com/CTreffOS" rel="noreferer" target="_blank">
             github.com/CTreffOS
           </a>
-        </dd>
-      </dl>
+        </li>
+      </ul>
     </div>
   );
 };
@@ -351,25 +275,28 @@ const HomeEn = ({
       <h3>News</h3>
 
       <ul>
-        {news.map((item) => {
-          const [lang, ...slug] = item.slug.split("/");
-          console.log(lang, slug);
+        {news
+          .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+          .map((item) => {
+            const [lang, ...slug] = item.slug.split("/");
 
-          return (
-            <li key={item.slug}>
-              <a href={`/${lang}/news/${slug.join("/")}/`}>
-                {new Date(item.data.date).toLocaleDateString()} -{" "}
-                {item.data.title}
-              </a>
-            </li>
-          );
-        })}
+            return (
+              <li key={item.slug}>
+                <a href={`/${lang}/news/${slug.join("/")}/`}>
+                  {new Date(item.data.date).toLocaleDateString(lang, {
+                    dateStyle: "medium",
+                  })}{" "}
+                  - {item.data.title}
+                </a>
+              </li>
+            );
+          })}
       </ul>
 
       <dl>
         <dt>Regular meetings</dt>
         <dd>
-          Every second Thursday we meet at 7 pm at the{" "}
+          Every Thursday we meet at 7 pm at the{" "}
           <a
             href="https://www.openstreetmap.org/?mlat=52.27274&mlon=8.04577#map=19/52.27274/8.04577"
             rel="noreferer"
@@ -462,34 +389,6 @@ const HomeEn = ({
                 target="_blank"
               >
                 @chaostreff_osnabrueck
-              </a>
-            </li>
-          </ul>
-        </dd>
-
-        <dt>Projects</dt>
-        <dd>
-          <ul>
-            {/* <!--
-			<li><a href="https://codingchaos.chaostreff-osnabrueck.de">codingchaOS</a></li>
-		--> */}
-            <li>
-              <a href="/downloads/offenerBrief_offeneDaten.pdf">
-                Statement on the statute of the freedom of information (German)
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://niedersachsentrojaner.de/"
-                rel="noreferer"
-                target="_blank"
-              >
-                #noNPOG Bündnis (German)
-              </a>
-            </li>
-            <li>
-              <a href="/downloads/brief_kontaktnachverfolgungsapps.pdf">
-                Open letter Covid contact tracing apps (German)
               </a>
             </li>
           </ul>

@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
+import { format } from "date-fns";
 
 export async function getStaticPaths() {
   const pages = await getCollection("news");
@@ -15,13 +16,21 @@ export async function getStaticPaths() {
 
 const { lang, slug } = Astro.params;
 const page = Astro.props;
-const formattedDate = page.data.date.toLocaleDateString(lang);
+const formattedDate = page.data.date.toLocaleDateString(lang, {
+  dateStyle: "medium",
+});
 
 const { Content } = await page.render();
 ---
 
 <Layout title={page.data.title} lang={lang}>
-  <h1>{page.data.title}</h1>
-  <Content />
-  <p>by {page.data.author} • {formattedDate}</p>
+  <article>
+    <h1 class="mb-0">{page.data.title}</h1>
+    <span class="my-0">
+      {page.data.author} • <date datetime={format(page.data.date, "yyyy-MM-dd")}
+        >{formattedDate}</date
+      ></span
+    >
+    <Content />
+  </article>
 </Layout>
