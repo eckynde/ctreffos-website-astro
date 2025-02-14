@@ -1,9 +1,9 @@
 ---
-import { Image } from "astro:assets";
-import CTreffLogo from "../assets/ctreffos-logo.png";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 import Head from "../components/Head.astro";
 import "../../base.css";
+import Footer from "../components/Footer.astro";
+import Navigation from "../components/Navigation.astro";
 
 const { title } = Astro.props;
 
@@ -17,50 +17,13 @@ const t = useTranslations(lang);
   <body>
     <div class="min-h-screen flex justify-center">
       <div class="flex flex-col min-h-screen">
-        <a href={`/${lang}`}>
-          <header class="flex flex-col items-center sm:items-start pb-6">
-            <Image
-              src={CTreffLogo}
-              alt="Chaostreff Osnabrück Logo"
-              class="invert-0 dark:invert"
-              width={517}
-              height={299}
-              loading="eager"
-            />
-          </header>
-        </a>
-        <nav class="flex flex-col sm:flex-row gap-3 py-8">
-          <a href={`/${lang}`}>{t("nav.home")}</a>
-          <a href={`/${lang}/about`}>{t("nav.about")}</a>
-          <a href={`/${lang}/hackspace`}>{t("nav.hackspace")}</a>
-          <a href={`/${lang}/club`}>{t("nav.club")}</a>
-          <a href={`/${lang}/donate`}>{t("nav.donate")}</a>
-        </nav>
+        <Navigation />
         <main
           class="flex flex-col md:max-w-2xl row-start-2 items-center sm:items-start prose prose-invert"
         >
           <slot />
         </main>
-        <footer class="flex flex-col gap-3 py-8">
-          <hr />
-          <div
-            class="flex flex-col sm:flex-row gap-8 items-center sm:items-start"
-          >
-            <a href={`/${lang}/site-notice`}>
-              {t("nav.site-notice")}
-            </a>
-            <a href={`/${lang}/privacy-policy`}>
-              {t("nav.privacy-policy")}
-            </a>
-            <a href={`/${lang}/faq`}>{t("nav.faq")}</a>
-            <a href={`/${lang}/contact`}>{t("nav.contact")}</a>
-          </div>
-
-          <div class="flex gap-6 justify-center">
-            <a href="/de">Deutsch</a>
-            <a href="/en">English</a>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </div>
   </body><style>

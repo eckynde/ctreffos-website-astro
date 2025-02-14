@@ -3,7 +3,7 @@ import { addDays, format } from "date-fns";
 import { TZDate } from "@date-fns/tz";
 import type { JSX } from "react/jsx-runtime";
 import { getLocale } from "../i18n/utils";
-import { InferEntrySchema, Render, RenderedContent } from "astro:content";
+import type { InferEntrySchema, Render, RenderedContent } from "astro:content";
 
 const upcomingEvents = async () => {
   const returnEvents: {
@@ -219,25 +219,6 @@ const HomeDe = ({
         </a>
         .
       </dd>
-      <h3>Soziale Medien</h3>
-      <ul>
-        <li>
-          Fediverse (Mastodon):{" "}
-          <a
-            href="https://chaos.social/@chaostreff_osnabrueck"
-            rel="me"
-            target="_blank"
-          >
-            @chaostreff_osnabrueck
-          </a>
-        </li>
-        <li>
-          GitHub:{" "}
-          <a href="https://github.com/CTreffOS" rel="noreferer" target="_blank">
-            github.com/CTreffOS
-          </a>
-        </li>
-      </ul>
     </div>
   );
 };

@@ -1,0 +1,51 @@
+---
+import GithubIcon from "../components/GithubIcon.astro";
+import MastodonIcon from "../components/MastodonIcon.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<footer class="flex flex-col gap-3 py-8">
+  <hr />
+  <div
+    class="flex flex-col text-xl sm:text-base sm:flex-row gap-x-8 gap-y-3 items-center justify-center"
+  >
+    <a href={`/${lang}/site-notice`}>
+      {t("nav.site-notice")}
+    </a>
+    <a href={`/${lang}/privacy-policy`}>
+      {t("nav.privacy-policy")}
+    </a>
+    <a href={`/${lang}/faq`}>{t("nav.faq")}</a>
+    <a href={`/${lang}/contact`}>{t("nav.contact")}</a>
+  </div>
+
+  <div class="flex gap-6 justify-center">
+    <a
+      href="https://chaos.social/@chaostreff_osnabrueck"
+      rel="me"
+      target="_blank"
+      class="transition hover:scale-110"
+      aria-label="Mastodon"
+      title="Mastodon"
+    >
+      <MastodonIcon />
+    </a>
+    <a
+      href="https://github.com/CTreffOS"
+      rel="noreferer"
+      target="_blank"
+      class="transition hover:scale-110"
+      aria-label="GitHub"
+      title="GitHub"
+    >
+      <GithubIcon />
+    </a>
+  </div>
+  <div class="flex gap-6 justify-center text-xl sm:text-base">
+    <a href="/de">Deutsch</a>
+    <a href="/en">English</a>
+  </div>
+</footer>
