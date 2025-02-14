@@ -8,7 +8,7 @@ export default async function PrivacyPolicy({ lang }: { lang: string }) {
 
 const PrivacyPolicyDe = () => {
   return (
-    <div className="prose dark:prose-invert">
+    <div>
       <h1>Datenschutzerklärung</h1>
 
       <p>
@@ -228,7 +228,7 @@ const PrivacyPolicyDe = () => {
 
 const PrivacyPolicyEn = () => {
   return (
-    <div className="prose dark:prose-invert">
+    <div>
       <h1>Privacy Policy</h1>
 
       <p>

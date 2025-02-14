@@ -148,7 +148,7 @@ const HomeDe = ({
   news = news.filter((item) => item.slug.startsWith("de/"));
 
   return (
-    <div className="prose dark:prose-invert">
+    <div>
       <h1>Chaostreff Osnabrück e.V. – All creatures welcome!</h1>
       <p>
         Fasziniert von Sicherheit, alternativen Betriebssystemen, freier (libre)
@@ -242,7 +242,7 @@ const HomeEn = ({
   news = news.filter((item) => item.slug.startsWith("en/"));
 
   return (
-    <div className="prose dark:prose-invert">
+    <div>
       <p>
         The Chaostreff Osnabrück e.V. is a group of people interested in topics
         like security, cryptography, alternative operating systems, free (libre)

@@ -8,7 +8,7 @@ export default async function Donate({ lang }: { lang: string }) {
 
 const DonateDe = () => {
   return (
-    <div className="prose dark:prose-invert">
+    <div>
       <h1>Spenden</h1>
 
       <p>
@@ -90,7 +90,7 @@ const DonateDe = () => {
 
 const DonateEn = () => {
   return (
-    <div className="prose dark:prose-invert">
+    <div>
       <h1>Donate</h1>
 
       <p>

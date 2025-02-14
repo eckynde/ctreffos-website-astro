@@ -2,13 +2,14 @@
 import { Image } from "astro:assets";
 import CTreffLogo from "../assets/ctreffos-logo.png";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import { Navigation as Nav } from "@/components/Navigation.tsx";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
 <a href={`/${lang}`}>
-  <header class="flex flex-col items-center sm:items-start pb-6">
+  <header class="flex flex-col items-center sm:items-start">
     <Image
       src={CTreffLogo}
       alt="Chaostreff Osnabrück Logo"
@@ -19,12 +20,5 @@ const t = useTranslations(lang);
     />
   </header>
 </a>
-<nav
-  class="flex flex-col sm:flex-row gap-x-8 gap-y-3 text-xl sm:text-base py-8 items-center justify-center"
->
-  <a href={`/${lang}`}>{t("nav.home")}</a>
-  <a href={`/${lang}/about`}>{t("nav.about")}</a>
-  <a href={`/${lang}/hackspace`}>{t("nav.hackspace")}</a>
-  <a href={`/${lang}/club`}>{t("nav.club")}</a>
-  <a href={`/${lang}/donate`}>{t("nav.donate")}</a>
-</nav>
+
+<Nav lang={lang} />

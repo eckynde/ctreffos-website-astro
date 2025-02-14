@@ -8,7 +8,7 @@ export default async function SiteNotice({ lang }: { lang: string }) {
 
 const SiteNoticeDe = () => {
   return (
-    <div className="prose dark:prose-invert">
+    <div>
       <h1>Impressum</h1>
 
       <p>
@@ -77,7 +77,7 @@ const SiteNoticeDe = () => {
 const SiteNoticeEn = () => {
   //   metadata.title = "Chaostreff Osnabrück e.V. - Site Notice";
   return (
-    <div className="prose dark:prose-invert">
+    <div>
       <h1>Site Notice</h1>
 
       <p>
