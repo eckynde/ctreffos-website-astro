@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import { getLangFromUrl } from "../i18n/utils";
 import Head from "../components/Head.astro";
 import "@/styles/globals.css";
 import Footer from "../components/Footer.astro";
@@ -8,7 +8,6 @@ import Navigation from "../components/Navigation.astro";
 const { title } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
 ---
 
 <script is:inline>
