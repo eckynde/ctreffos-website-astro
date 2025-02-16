@@ -1,0 +1,33 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import FormattedDate from "./FormattedDate.astro";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
+
+const { date, title, speaker, children, ...props } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Card>
+  <CardHeader>
+    <CardTitle>{title}</CardTitle>
+    <CardDescription><FormattedDate date={date} /> </CardDescription>
+  </CardHeader>
+  <CardContent>
+    {
+      speaker && (
+        <div>
+          {t("event.speaker")}: {speaker}
+        </div>
+      )
+    }
+    <slot />
+  </CardContent>
+</Card>

@@ -2,6 +2,9 @@
 layout: ../../layouts/Layout.astro
 ---
 
+import FormattedDate from "../../components/FormattedDate.astro";
+import Event from "../../components/Event.astro";
+
 # Über uns
 
 Willkommen beim Chaostreff Osnabrück, dem lebhaften Treffpunkt für Hacker:innen, Technikbegeisterte und kreative Köpfe! 🌟
@@ -16,99 +19,171 @@ Wenn du also auf der Suche nach einem Ort bist, an dem du deine technischen Fäh
 
 ## Vergangene Events
 
-- Chaos Colloqium #1: DNS Privacy und Sicherheit, Dr. Roland van Rijswijk-Deij (2020-02-06)
+<div class="flex flex-col divide-y gap-4">
+<Event date="2024-09-26" title="Programmieren lernen: Pixelflut Basics" />
+
+<Event date="2024-03-02" title="Tag des offenen Hackspaces" />
+
+<Event date="2023-06-15" title="Workshop: Digitaler Selbstschutz">
   <ul>
-    <a href="/downloads/chaos_colloquium_flyer_a4.pdf" target="_blank">
-      <li>Flyer</li>
+    <li>Mobile Apps</li>
+    <li>E-Mail Sicherheit</li>
+    <li>Cloud? Aber sicher!</li>
+  </ul>
+</Event>
+
+<Event date="2022-12-13" title="Workshop: Loeten? Loeten. Loeten!">
+  Loeten lernen in geselliger Runde mit einfachen Bausaetzen
+</Event>
+
+<Event
+  date="2022-06-16"
+  title="Einstiegs-Workshop: Microcontroller Programmierung"
+></Event>
+
+<Event date="2022-12-01" title="Mein Passwort ist sicher, oder?">
+  Sicherer Umgang mit Zugaengen im Internet
+</Event>
+
+<Event
+  date="2022-05-05"
+  title="Einstiegs-Workshop: Microcontroller Programmierung"
+/>
+
+<Event
+  date="2020-02-06"
+  title="Chaos Colloqium #1: DNS Privacy und Sicherheit"
+  speaker="Dr. Roland van Rijswijk-Deij"
+>
+  <ul>
+    <a href="downloads/chaos_colloquium_flyer_a4.pdf" target="_blank">
+      <li>zum Flyer</li>
     </a>
     <a
       href="https://media.ccc.de/v/chaoscolloquium-1-dns-privacy-security"
       rel="noreferer"
       target="_blank"
     >
-      <li>Watch recording</li>
+      <li>zum Video</li>
     </a>
   </ul>
-- chaOStalks #1: Der erste Talk der Veranstaltung (2021-02-09)
+</Event>
 
-<dl>
-  <dt>chaOStalk #1</dt>
-  <dd>
-    <em>Politische Lösungen für technische Probleme</em>- Linus Neumann -
-    2015-11-27 -{" "}
-    <a href="../downloads/chaostalk1_a4.pdf" target="_blank">
-      zum Flyer
-    </a>{" "}
-    -{" "}
-    <a
-      rel="noreferer"
-      target="_blank"
-      href="https://media.ccc.de/v/ChaOStalk-1-Linus-Neumann"
-    >
-      zum Video
+<Event
+  date="2020-01-16"
+  title="Vortrag zum Thema GPG-Schlüsselverteilung"
+  speaker="Dr. Peter Voigt"
+/>
+
+<Event date="2020-01-12" title="Congress Everywhere: 36c3" />
+
+<Event date="2019-12-05" title="Winter Workshops">
+  Vorträge und Workshops:
+  <ul>
+    <li>Track the Trackers: Wie steht es um Privatsphäre im Internet?</li>
+    <li>Computer == Männersache? Wie Hackspaces diverser werden koennen</li>
+    <li>Krankenhaus IT-Security Nightmares</li>
+    <li>Wie und warum ich meinen Staubsauger gehackt habe</li>
+    <li>Einfuehrung in LoRaWAN</li>
+    <li>
+      Emissions API: Einfacher Zugriff auf satellitengestuetzte Emissionsdaten
+    </li>
+  </ul>
+</Event>
+
+<Event
+  date="2019-09-19"
+  title="Kernfusion - Energiequelle der Zukunft?"
+  speaker="Paffy"
+></Event>
+
+<Event
+  date="2019-01-18"
+  title="chaOStalk #4: Kunstliche Intelligenz & Neuronale Netze"
+  speaker="Prof. Dr. Joachim Hertzberg und Volker Strübing"
+>
+  <ul>
+    <a href="downloads/chaostalk4_a4.pdf" target="_blank">
+      <li>zum Flyer</li>
     </a>
-  </dd>
-  <dt>chaOStalk #2</dt>
-  <dd>
-    <em>#NSAUA</em>- Anna Biselli und Prof. Martin &quot;maha&quot; Haase -
-    2016-04-22 -{" "}
-    <a href="../downloads/chaostalk2_a3.pdf" target="_blank">
-      zum Flyer
-    </a>{" "}
-    -{" "}
     <a
-      rel="noreferer"
-      target="_blank"
-      href="https://media.ccc.de/v/chaostalk-2.1-NSAUA"
-    >
-      zum Video (Anna Biselli)
-    </a>{" "}
-    -{" "}
-    <a
-      rel="noreferer"
-      target="_blank"
-      href="https://media.ccc.de/v/chaostalk-2.2-NSAUA"
-    >
-      zum Video (Prof. Martin &quot;maha&quot; Haase)
-    </a>
-  </dd>
-  <dt>chaOStalk #3</dt>
-  <dd>
-    <em>#SearchWing</em>- Andreas &quot;Steini&quot; Steinhauser - 2017-06-29 -{" "}
-    <a href="../downloads/chaostalk3_a3.pdf" target="_blank">
-      zum Flyer
-    </a>{" "}
-    -{" "}
-    <a
-      rel="noreferer"
-      target="_blank"
-      href="https://media.ccc.de/v/chaostalk-3-searchwing"
-    >
-      zum Video
-    </a>
-  </dd>
-  <dt>chaOStalk #4</dt>
-  <dd>
-    <em>Künstliche Intelligenz & Neuronale Netze</em>- Prof. Dr. Joachim
-    Hertzberg und Volker Strübing - 2019-01-18 -{" "}
-    <a href="../downloads/chaostalk4_a4.pdf" target="_blank">
-      zum Flyer
-    </a>{" "}
-    -{" "}
-    <a
-      rel="noreferer"
-      target="_blank"
       href="https://media.ccc.de/v/chaostalk-4.1-Kuenstliche-Intelligenz"
-    >
-      zum Video (Volker Strübing)
-    </a>{" "}
-    -{" "}
-    <a
       rel="noreferer"
       target="_blank"
-      href="https://media.ccc.de/v/chaostalk-4.2-Kuenstliche-Intelligenz"
     >
-      zum Video (Prof. Dr. Joachim Hertzberg)
+      <li>zum Video (Volker Strübing)</li>
     </a>
-  </dd>
-</dl>
+    <a
+      href="https://media.ccc.de/v/chaostalk-4.2-Kuenstliche-Intelligenz"
+      rel="noreferer"
+      target="_blank"
+    >
+      <li>zum Video (Prof. Dr. Joachim Hertzberg)</li>
+    </a>
+  </ul>
+</Event>
+
+<Event
+  date="2017-06-29"
+  title="chaOStalks #3: SearchWing"
+  speaker='Andreas "Steini" Steinhauser'
+>
+  <ul>
+    <a href="downloads/chaostalk3_a3.pdf" target="_blank">
+      <li>zum Flyer</li>
+    </a>
+    <a
+      href="https://media.ccc.de/v/chaostalk-3-searchwing"
+      rel="noreferer"
+      target="_blank"
+    >
+      <li>zum Video</li>
+    </a>
+  </ul>
+</Event>
+
+<Event
+  date="2016-04-22"
+  title="chaOStalks #2: NSAUA"
+  speaker='Anna Biselli und Prof. Martin "maha" Haase'
+>
+  <ul>
+    <a href="downloads/chaostalk2_a3.pdf" target="_blank">
+      <li>zum Flyer</li>
+    </a>
+    <a
+      href="https://media.ccc.de/v/chaostalk-2.1-NSAUA"
+      rel="noreferer"
+      target="_blank"
+    >
+      <li>zum Video (Anna Biselli)</li>
+    </a>
+    <a
+      href="https://media.ccc.de/v/chaostalk-2.2-NSAUA"
+      rel="noreferer"
+      target="_blank"
+    >
+      <li>zum Video (Prof. Martin &quot;maha&quot; Haase)</li>
+    </a>
+  </ul>
+</Event>
+
+<Event
+  date="2015-11-27"
+  title="chaOStalks #1: Politische Lösungen für technische Probleme"
+  speaker="Linus Neumann"
+>
+  <ul>
+    <a href="downloads/chaostalk1_a4.pdf" target="_blank">
+      <li>zum Flyer</li>
+    </a>
+    <a
+      href="https://media.ccc.de/v/ChaOStalk-1-Linus-Neumann"
+      rel="noreferer"
+      target="_blank"
+    >
+      <li>zum Video</li>
+    </a>
+  </ul>
+</Event>
+</div>
