@@ -219,7 +219,7 @@ const HomeDe = ({
           rel="noreferer"
           target="_blank"
         >
-          öffentliche Matrix-Raum
+          öffentlichen Matrix-Raum
         </a>
         .
       </dd>

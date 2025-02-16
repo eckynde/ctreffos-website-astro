@@ -13,23 +13,23 @@ const t = useTranslations(lang);
     class="flex flex-col text-xl sm:text-base sm:flex-row gap-x-8 gap-y-3 items-center justify-center"
   >
     <a
-      href={new URL(`${lang}/site-notice`, Astro.url)}
+      href={`${import.meta.env.BASE_URL}/${lang}/site-notice`}
       class="hover:underline transition"
     >
       {t("nav.site-notice")}
     </a>
     <a
-      href={new URL(`${lang}/privacy-policy`, Astro.url)}
+      href={`${import.meta.env.BASE_URL}/${lang}/privacy-policy`}
       class="hover:underline transition"
     >
       {t("nav.privacy-policy")}
     </a>
     <a
-      href={new URL(`${lang}/faq`, Astro.url)}
+      href={`${import.meta.env.BASE_URL}/${lang}/faq`}
       class="hover:underline transition">{t("nav.faq")}</a
     >
     <a
-      href={new URL(`${lang}/contact`, Astro.url)}
+      href={`${import.meta.env.BASE_URL}/${lang}/contact`}
       class="hover:underline transition">{t("nav.contact")}</a
     >
   </div>
@@ -57,11 +57,13 @@ const t = useTranslations(lang);
     </a>
   </div>
   <div class="flex gap-6 justify-center text-xl sm:text-base">
-    <a href={new URL(`de`, Astro.url)} class="hover:underline transition"
-      >Deutsch</a
+    <a
+      href={`${import.meta.env.BASE_URL}/de`}
+      class="hover:underline transition">Deutsch</a
     >
-    <a href={new URL(`en`, Astro.url)} class="hover:underline transition"
-      >English</a
+    <a
+      href={`${import.meta.env.BASE_URL}/en`}
+      class="hover:underline transition">English</a
     >
   </div>
 </footer>
