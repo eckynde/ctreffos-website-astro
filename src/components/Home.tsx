@@ -175,7 +175,11 @@ const HomeDe = ({
 
             return (
               <li key={item.slug}>
-                <a href={`/${lang}/news/${slug.join("/")}/`}>
+                <a
+                  href={`${import.meta.env.BASE_URL}/${lang}/news/${slug.join(
+                    "/"
+                  )}/`}
+                >
                   {new Date(item.data.date).toLocaleDateString(lang, {
                     dateStyle: "medium",
                   })}{" "}
@@ -263,7 +267,11 @@ const HomeEn = ({
 
             return (
               <li key={item.slug}>
-                <a href={`/${lang}/news/${slug.join("/")}/`}>
+                <a
+                  href={`${import.meta.env.BASE_URL}/${lang}/news/${slug.join(
+                    "/"
+                  )}/`}
+                >
                   {new Date(item.data.date).toLocaleDateString(lang, {
                     dateStyle: "medium",
                   })}{" "}

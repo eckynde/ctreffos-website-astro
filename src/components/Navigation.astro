@@ -1,14 +1,13 @@
 ---
 import { Image } from "astro:assets";
 import CTreffLogo from "../assets/ctreffos-logo.png";
-import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import { getLangFromUrl } from "../i18n/utils";
 import { Navigation as Nav } from "@/components/Navigation.tsx";
 
 const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
 ---
 
-<a href={`/${lang}`}>
+<a href={new URL(`../${lang}`, Astro.url)}>
   <header class="flex flex-col items-center">
     <Image
       src={CTreffLogo}

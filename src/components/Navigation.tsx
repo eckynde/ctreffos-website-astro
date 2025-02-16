@@ -15,7 +15,7 @@ export const Navigation = ({ lang }: { lang: "en" | "de" }) => {
         <NavigationMenuList className="flex flex-col sm:flex-row gap-x-8 gap-y-3 text-xl sm:text-base py-8 items-center justify-center">
           <NavigationMenuItem>
             <NavigationMenuLink
-              href={`/${lang}`}
+              href={`${import.meta.env.BASE_URL}/${lang}`}
               className="hover:bg-accent transition px-4 py-2 rounded-sm"
             >
               {t("nav.home")}
@@ -23,7 +23,7 @@ export const Navigation = ({ lang }: { lang: "en" | "de" }) => {
           </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuLink
-              href={`/${lang}/about`}
+              href={`${import.meta.env.BASE_URL}/${lang}/about`}
               className="hover:bg-accent transition px-4 py-2 rounded-sm"
             >
               {t("nav.about")}
@@ -31,7 +31,7 @@ export const Navigation = ({ lang }: { lang: "en" | "de" }) => {
           </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuLink
-              href={`/${lang}/hackspace`}
+              href={`${import.meta.env.BASE_URL}/${lang}/hackspace`}
               className="hover:bg-accent transition px-4 py-2 rounded-sm"
             >
               {t("nav.hackspace")}
@@ -39,7 +39,7 @@ export const Navigation = ({ lang }: { lang: "en" | "de" }) => {
           </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuLink
-              href={`/${lang}/club`}
+              href={`${import.meta.env.BASE_URL}/${lang}/club`}
               className="hover:bg-accent transition px-4 py-2 rounded-sm"
             >
               {t("nav.club")}
@@ -47,7 +47,7 @@ export const Navigation = ({ lang }: { lang: "en" | "de" }) => {
           </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuLink
-              href={`/${lang}/donate`}
+              href={`${import.meta.env.BASE_URL}/${lang}/donate`}
               className="hover:bg-accent transition px-4 py-2 rounded-sm"
             >
               {t("nav.donate")}
