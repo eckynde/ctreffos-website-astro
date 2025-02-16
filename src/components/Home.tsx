@@ -192,7 +192,7 @@ const HomeDe = ({
       <h3>Regelmäßige Treffen</h3>
       <dd>
         Jeden Donnerstag treffen wir uns um 19:00 Uhr im{" "}
-        <a href="/de/hackspace#anfahrt">
+        <a href={`${import.meta.env.BASE_URL}/de/hackspace#anfahrt`}>
           AStA der Universität Osnabrück, Alte Münze 12, 49074 Osnabrück
         </a>{" "}
         in unserem Hackspace Rabbithole.
