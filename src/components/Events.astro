@@ -1,0 +1,40 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import Event from "./Event.astro";
+import { getCollection, render } from "astro:content";
+
+interface Props {
+  type: "past" | "upcoming";
+}
+
+const { type } = Astro.props;
+const t = useTranslations(getLangFromUrl(Astro.url));
+const lang = getLangFromUrl(Astro.url);
+
+const events = (await getCollection("events"))
+  .filter(
+    (event) =>
+      ("past" === type && event.data.date < new Date()) ||
+      ("upcoming" === type && event.data.date >= new Date())
+  )
+  .filter((item) => item.slug.startsWith(`${lang}/`));
+---
+
+<h2>{t(`event.${type}`)}</h2>
+
+<div class="flex flex-col gap-4">
+  {events.length === 0 && <p>{t(`event.no-${type}`)}</p>}
+  {
+    events
+      .toSorted((a, b) => (a.data.date < b.data.date ? 1 : -1))
+      .map(async (event) => {
+        const { Content } = await render(event);
+
+        return (
+          <Event {...event.data}>
+            <Content />
+          </Event>
+        );
+      })
+  }
+</div>

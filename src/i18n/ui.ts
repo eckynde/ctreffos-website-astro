@@ -17,6 +17,10 @@ export const ui = {
     "nav.hackspace": "Hackspace",
     "nav.about": "About",
     "event.speaker": "Speaker",
+    "event.no-past": "No past events",
+    "event.no-upcoming": "No upcoming events",
+    "event.past": "Past Events",
+    "event.upcoming": "Upcoming Events",
   },
   de: {
     "nav.home": "Start",
@@ -29,5 +33,9 @@ export const ui = {
     "nav.hackspace": "Hackspace",
     "nav.about": "Über uns",
     "event.speaker": "Vortragende",
+    "event.no-past": "Keine vergangenen Events",
+    "event.no-upcoming": "Keine anstehenden Events",
+    "event.past": "Vergangene Events",
+    "event.upcoming": "Anstehende Events",
   },
 } as const;

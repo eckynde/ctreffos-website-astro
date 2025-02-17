@@ -8,6 +8,15 @@ const newsCollection = defineCollection({
   }),
 });
 
+const eventsCollection = defineCollection({
+  schema: z.object({
+    date: z.date(),
+    title: z.string(),
+    speaker: z.string().optional(),
+  }),
+});
+
 export const collections = {
   news: newsCollection,
+  events: eventsCollection,
 };
