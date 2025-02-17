@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+
+export interface Props {
+  small: { src: string; width: number; height: number; alt: string };
+  large: { src: string; width: number; height: number; alt: string };
+  pageUrl: string;
+  id: string;
+}
+---
+
+<a
+  href=`${Astro.props.pageUrl}#${Astro.props.id}-lightbox`
+  id=`${Astro.props.id}`
+>
+  <Image {...Astro.props.small} />
+</a>
+
+<div
+  id={`${Astro.props.id}-lightbox`}
+  class="hidden target:block fixed inset-0 p-10 bg-black/75 overflow-auto"
+>
+  <a
+    href=`${Astro.props.pageUrl}#${Astro.props.id}`
+    class="bg-white px-3 py-1 text-black absolute right-0 top-0">X</a
+  >
+  <Image
+    {...Astro.props.large}
+    class={"mx-auto max-h-fit h-[90vh] max-w-fit w-[90vw] my-auto object-contain"}
+  />
+</div>
