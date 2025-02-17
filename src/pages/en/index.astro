@@ -1,12 +1,82 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Home from "../../components/Home";
-
+import { CalendarEvents } from "@/components/CalendarEvents";
+import { getLangFromUrl } from "@/i18n/utils";
 import { getCollection } from "astro:content";
 
-const allNews = await getCollection("news");
+const news = (await getCollection("news")).filter((item) =>
+  item.slug.startsWith("en/")
+);
 ---
 
 <Layout>
-  <Home lang="en" news={allNews} />
+  <div>
+    <p>
+      The Chaostreff Osnabrück e.V. is a group of people interested in topics
+      like security, cryptography, alternative operating systems, free (libre)
+      software, internet related politics and what else comes to mind.
+    </p>
+    <p>People interested in our topics are welcome at our regular meetings.</p>
+    <h3>News</h3>
+    <ul>
+      {
+        news
+          .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+          .map((item) => {
+            const [lang, ...slug] = item.slug.split("/");
+
+            return (
+              <li>
+                <a
+                  href={`${import.meta.env.BASE_URL}/${lang}/news/${slug.join(
+                    "/"
+                  )}/`}
+                >
+                  {new Date(item.data.date).toLocaleDateString(lang, {
+                    dateStyle: "medium",
+                  })}{" "}
+                  - {item.data.title}
+                </a>
+              </li>
+            );
+          })
+      }
+    </ul>
+    <h3>Regular meetings</h3>
+    Every Thursday we meet at 7 pm at the{" "}
+    <a
+      href="https://www.openstreetmap.org/?mlat=52.27274&mlon=8.04577#map=19/52.27274/8.04577"
+      rel="noreferer"
+      target="_blank"
+    >
+      AStA of the University of Osnabrück, Alte Münze 12, 49074 Osnabrück
+    </a>{" "}
+    in our hackspace Rabbithole.
+    <h3>Calendar</h3>
+    All events of the next months can be viewed online, be subscribed to as iCalendar
+    or be downloaded as .ics file:{" "}
+    <a
+      href="https://vc1.brainfact.de/nextcloud/apps/calendar/p/LqyiwT8aRjkbLako"
+      rel="noreferer"
+      target="_blank"
+    >
+      to our calendar
+    </a>
+    .
+    <CalendarEvents lang={getLangFromUrl(Astro.url)} />
+    <h3>Public Chatroom</h3>
+    <ul>
+      <li>
+        The{" "}
+        <a
+          href="https://matrix.to/#/#public_ctreffos:matrix.drpetervoigt.de"
+          rel="noreferer"
+          target="_blank"
+        >
+          public Matrix room
+        </a>{" "}
+        is bidirectionally mirrored with the public Jabber MUC.
+      </li>
+    </ul>
+  </div>
 </Layout>

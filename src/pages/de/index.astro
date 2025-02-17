@@ -1,12 +1,83 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Home from "../../components/Home";
-
+import { CalendarEvents } from "@/components/CalendarEvents";
+import { getLangFromUrl } from "@/i18n/utils";
 import { getCollection } from "astro:content";
 
-const allNews = await getCollection("news");
+const news = (await getCollection("news")).filter((item) =>
+  item.slug.startsWith("de/")
+);
 ---
 
 <Layout>
-  <Home lang="de" news={allNews} />
+  <div>
+    <h1>Chaostreff Osnabrück e.V. – All creatures welcome!</h1>
+    <p>
+      Fasziniert von Sicherheit, alternativen Betriebssystemen, freier (libre)
+      Software und Netzpolitik? Willkommen beim{" "}
+      <b>Chaostreff Osnabrück e.V.</b>, deiner Anlaufstelle für alle, die die
+      Welt hacken und gestalten wollen.
+    </p>
+    <p>
+      <b>Unsere Mission:</b> Wir sind eine Gruppe von Hacker*innen und Technikfreaks,
+      die regelmäßig zusammenkommen, um Ideen zu teilen und Projekte zu entwickeln.
+      Bei uns sind alle willkommen – ob erfahren oder neugierig.
+    </p>
+    <p>
+      <b>Join us!</b> Besuche unsere Treffen und sei Teil unserer chaotischen Truppe.
+      Wir freuen uns auf dich!
+    </p>
+    <h3>Neuigkeiten</h3>
+    <ul>
+      {
+        news
+          .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+          .map((item) => {
+            const [lang, ...slug] = item.slug.split("/");
+
+            return (
+              <li>
+                <a
+                  href={`${import.meta.env.BASE_URL}/${lang}/news/${slug.join(
+                    "/"
+                  )}/`}
+                >
+                  {new Date(item.data.date).toLocaleDateString(lang, {
+                    dateStyle: "medium",
+                  })}{" "}
+                  - {item.data.title}
+                </a>
+              </li>
+            );
+          })
+      }
+    </ul>
+    <h3>Regelmäßige Treffen</h3>
+    Jeden Donnerstag treffen wir uns um 19:00 Uhr im{" "}
+    <a href={`${import.meta.env.BASE_URL}/de/hackspace#anfahrt`}>
+      AStA der Universität Osnabrück, Alte Münze 12, 49074 Osnabrück
+    </a>{" "}
+    in unserem Hackspace Rabbithole.
+    <CalendarEvents lang={getLangFromUrl(Astro.url)} />
+    <h3>Veranstaltungen</h3>
+    Alle Termine der nächsten Monate können online angesehen, als iCalendar abonniert
+    oder als .ics-Datei heruntergeladen werden:{" "}
+    <a
+      href="https://vc1.brainfact.de/nextcloud/apps/calendar/p/LqyiwT8aRjkbLako"
+      rel="noreferer"
+      target="_blank"
+    >
+      zu unserem Kalender
+    </a>
+    .<h3>Chatraum</h3>
+    Wir chatten regelmäßig in unserem{" "}
+    <a
+      href="https://matrix.to/#/#public_ctreffos:matrix.drpetervoigt.de"
+      rel="noreferer"
+      target="_blank"
+    >
+      öffentlichen Matrix-Raum
+    </a>
+    .
+  </div>
 </Layout>
