@@ -11,8 +11,8 @@ export const Navigation = ({ lang }: { lang: "en" | "de" }) => {
 
   return (
     <>
-      <NavigationMenu>
-        <NavigationMenuList className="flex flex-col sm:flex-row gap-x-8 gap-y-3 text-xl sm:text-base py-8 items-center justify-center">
+      <NavigationMenu className="flex flex-col gap-4 pb-3">
+        <NavigationMenuList className="flex flex-col sm:flex-row gap-x-8 gap-y-3 text-xl sm:text-base items-center justify-center flex-wrap">
           <NavigationMenuItem>
             <NavigationMenuLink
               href={`${import.meta.env.BASE_URL}/${lang}`}
@@ -51,6 +51,24 @@ export const Navigation = ({ lang }: { lang: "en" | "de" }) => {
               className="hover:bg-accent transition px-4 py-2 rounded-sm"
             >
               {t("nav.donate")}
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+        <NavigationMenuList className="flex flex-col sm:flex-row gap-x-8 gap-y-3 text-xl sm:text-base items-center justify-center flex-wrap">
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              href={`${import.meta.env.BASE_URL}/${lang}/faq`}
+              className="hover:bg-accent transition px-4 py-2 rounded-sm"
+            >
+              {t("nav.faq")}
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              href={`${import.meta.env.BASE_URL}/${lang}/contact`}
+              className="hover:bg-accent transition px-4 py-2 rounded-sm"
+            >
+              {t("nav.contact")}
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
