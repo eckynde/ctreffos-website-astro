@@ -39,14 +39,6 @@ export const Navigation = ({ lang }: { lang: "en" | "de" }) => {
           </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuLink
-              href={`${import.meta.env.BASE_URL}/${lang}/club`}
-              className="hover:bg-accent transition px-4 py-2 rounded-sm"
-            >
-              {t("nav.club")}
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuLink
               href={`${import.meta.env.BASE_URL}/${lang}/donate`}
               className="hover:bg-accent transition px-4 py-2 rounded-sm"
             >
