@@ -1,5 +1,5 @@
 ---
-import { RssIcon } from "lucide-react";
+import { CalendarIcon, RssIcon } from "lucide-react";
 import GithubIcon from "../components/GithubIcon.astro";
 import MastodonIcon from "../components/MastodonIcon.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
@@ -62,6 +62,16 @@ const t = useTranslations(lang);
       title="RSS"
     >
       <RssIcon />
+    </a>
+    <a
+      href={`${import.meta.env.BASE_URL}/${lang}/calendar.ics`}
+      rel="noreferer"
+      target="_blank"
+      class="transition hover:scale-110"
+      aria-label="ical Calendar"
+      title="ical Calendar"
+    >
+      <CalendarIcon />
     </a>
   </div>
 </footer>
