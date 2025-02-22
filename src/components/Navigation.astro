@@ -7,6 +7,22 @@ import { Navigation as Nav } from "@/components/Navigation.tsx";
 const lang = getLangFromUrl(Astro.url);
 ---
 
+<div class="relative">
+  {
+    lang === "de" && (
+      <a class="absolute top-3 right-3" href={`${import.meta.env.BASE_URL}/en`}>
+        🇬🇧
+      </a>
+    )
+  }
+  {
+    lang === "en" && (
+      <a class="absolute top-3 right-3" href={`${import.meta.env.BASE_URL}/de`}>
+        🇩🇪
+      </a>
+    )
+  }
+</div>
 <a href={`${import.meta.env.BASE_URL}/${lang}`}>
   <header class="flex flex-col items-center">
     <Image
