@@ -1,5 +1,5 @@
 ---
-const { title, ...props } = Astro.props;
+const { title, description, ...props } = Astro.props;
 
 const pageTitle = title
   ? `${title} - Chaostreff Osnabrück e.V.`
@@ -18,4 +18,5 @@ const pageTitle = title
   <meta name="generator" content={Astro.generator} />
   <base href={import.meta.env.BASE_URL} />
   <title>{pageTitle}</title>
+  <meta name="description" content={description} />
 </head>

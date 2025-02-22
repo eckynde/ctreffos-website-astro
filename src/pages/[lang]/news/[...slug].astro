@@ -23,7 +23,7 @@ const formattedDate = page.data.date.toLocaleDateString(lang, {
 const { Content } = await page.render();
 ---
 
-<Layout title={page.data.title} lang={lang}>
+<Layout title={page.data.title} description={page.data.description} lang={lang}>
   <article>
     <h1 class="mb-0">{page.data.title}</h1>
     <span class="my-0">
