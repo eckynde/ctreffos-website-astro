@@ -64,7 +64,7 @@ const news = (await getCollection("news")).filter((item) =>
     Alle Termine der nächsten Monate können online angesehen, als iCalendar abonniert
     oder als .ics-Datei heruntergeladen werden:{" "}
     <a
-      href="https://vc1.brainfact.de/nextcloud/apps/calendar/p/LqyiwT8aRjkbLako"
+      href=`${import.meta.env.BASE_URL}/de/calendar.ics`
       rel="noreferer"
       target="_blank"
     >

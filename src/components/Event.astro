@@ -9,16 +9,15 @@ import {
   CardTitle,
 } from "./ui/card";
 
-const { date, title, speaker, children, ...props } = Astro.props;
-
+const { startDate, title, speaker, children, slug, ...props } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
 <Card>
-  <CardHeader>
+  <CardHeader id={slug}>
     <CardTitle>{title}</CardTitle>
-    <CardDescription><FormattedDate date={date} /> </CardDescription>
+    <CardDescription><FormattedDate date={startDate} /> </CardDescription>
   </CardHeader>
   <CardContent>
     {
