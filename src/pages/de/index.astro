@@ -28,7 +28,7 @@ const news = (await getCollection("news")).filter((item) =>
       <b>Join us!</b> Besuche unsere Treffen und sei Teil unserer chaotischen Truppe.
       Wir freuen uns auf dich!
     </p>
-    <h3>Neuigkeiten</h3>
+    <h3 id="neuigkeiten">Neuigkeiten</h3>
     <ul>
       {
         news
@@ -53,14 +53,14 @@ const news = (await getCollection("news")).filter((item) =>
           })
       }
     </ul>
-    <h3>Regelmäßige Treffen</h3>
+    <h3 id="treffen">Regelmäßige Treffen</h3>
     Jeden Donnerstag treffen wir uns um 19:00 Uhr im{" "}
     <a href={`${import.meta.env.BASE_URL}/de/hackspace#anfahrt`}>
       AStA der Universität Osnabrück, Alte Münze 12, 49074 Osnabrück
     </a>{" "}
     in unserem Hackspace Rabbithole.
     <CalendarEvents lang={getLangFromUrl(Astro.url)} />
-    <h3>Veranstaltungen</h3>
+    <h3 id="veranstaltungen">Veranstaltungen</h3>
     Alle Termine der nächsten Monate können online angesehen, als iCalendar abonniert
     oder als .ics-Datei heruntergeladen werden:{" "}
     <a
@@ -70,7 +70,7 @@ const news = (await getCollection("news")).filter((item) =>
     >
       zu unserem Kalender
     </a>
-    .<h3>Chatraum</h3>
+    .<h3 id="chatraum">Chatraum</h3>
     Wir chatten regelmäßig in unserem{" "}
     <a
       href="https://matrix.to/#/#public_ctreffos:matrix.drpetervoigt.de"
