@@ -4,4 +4,15 @@ PRODID:-//sebbo.net//ical-generator//EN
 METHOD:REQUEST
 NAME:Chaostreff Osnabrück e.V
 X-WR-CALNAME:Chaostreff Osnabrück e.V
+BEGIN:VEVENT
+UID:6d7eb1b2-baa1-448f-ae3a-697f9e3a610c
+SEQUENCE:0
+DTSTAMP:20250222T212025Z
+DTSTART;TZID=Europe/Berlin:20240906T190000
+DTEND;TZID=Europe/Berlin:20240906T230000
+RRULE:FREQ=WEEKLY
+SUMMARY:Chaostreff
+LOCATION:Uni AStA Osnabrueck\, Alte Muenze 12\, 49074 Osnabrueck
+DESCRIPTION:Das woechentliche Treffen jeden Donnerstag um 19:00 Uhr statt.
+END:VEVENT
 END:VCALENDAR

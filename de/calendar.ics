@@ -5,198 +5,266 @@ METHOD:REQUEST
 NAME:Chaostreff Osnabrück e.V
 X-WR-CALNAME:Chaostreff Osnabrück e.V
 BEGIN:VEVENT
-UID:235c6f89-8249-486b-bec8-f897ba9ebb0c
+UID:ae423bad-e699-4a5b-9ac9-c4d2e1d5b7bf
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20240926T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20240906T190000
+DTEND;TZID=Europe/Berlin:20240906T230000
+RRULE:FREQ=WEEKLY
+SUMMARY:Chaostreff
+LOCATION:Uni AStA Osnabrueck\, Alte Muenze 12\, 49074 Osnabrueck
+DESCRIPTION:Das woechentliche Treffen jeden Donnerstag um 19:00 Uhr statt.
+END:VEVENT
+BEGIN:VEVENT
+UID:7926d8b3-67d4-44c5-9722-1ede27104400
+SEQUENCE:0
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20240926T000000
 SUMMARY:Programmieren lernen: Pixelflut Basics
-DESCRIPTION:<p>Lernt Python in einem spielerischem Programmier-Workshop</p
- >\n
+DESCRIPTION:Lernt Python in einem spielerischem Programmier-Workshop\n
+X-ALT-DESC;FMTTYPE=text/html:<p>Lernt Python in einem spielerischem Progra
+ mmier-Workshop</p>\n
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2024-09-26
 END:VEVENT
 BEGIN:VEVENT
-UID:2683a2df-d5c3-439d-9166-5a714804a061
+UID:1de067a8-e3c4-46bd-985f-8d04e92eea6d
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20240302T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20240302T000000
 SUMMARY:Tag des offenen Hackspaces
-DESCRIPTION:<p>Kommt vorbei und besucht uns im Rabbithole</p>\n
+DESCRIPTION:Kommt vorbei und besucht uns im Rabbithole\n
+X-ALT-DESC;FMTTYPE=text/html:<p>Kommt vorbei und besucht uns im Rabbithole
+ </p>\n
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2024-03-02
 END:VEVENT
 BEGIN:VEVENT
-UID:bdb8d088-029d-4542-8625-86c6b589fd0a
+UID:6ca2e36e-d9b0-44bc-acbc-3e4ef601b702
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20231207T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20231207T000000
 SUMMARY:Workshop: Löten!
-DESCRIPTION:<p>Löten lernen in geselliger Runde mit einfachen Bausätzen<
- /p>\n
+DESCRIPTION:Löten lernen in geselliger Runde mit einfachen Bausätzen\n
+X-ALT-DESC;FMTTYPE=text/html:<p>Löten lernen in geselliger Runde mit einf
+ achen Bausätzen</p>\n
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2023-12-07
 END:VEVENT
 BEGIN:VEVENT
-UID:cf5bbe48-7cfd-4495-bf9a-840e9da326a5
+UID:793129a1-7964-4448-a2bb-1f851d3ddec7
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20230615T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20230615T000000
 SUMMARY:Workshop: Digitaler Selbstschutz
-DESCRIPTION:<ul>\n<li>Mobile Apps\n<ul>\n<li>E-Mail Sicherheit</li>\n<li>C
- loud? Aber sicher!</li>\n</ul>\n</li>\n</ul>\n
+DESCRIPTION:\nMobile Apps\n\nE-Mail Sicherheit\nCloud? Aber sicher!\n\n\n\
+ n
+X-ALT-DESC;FMTTYPE=text/html:<ul>\n<li>Mobile Apps\n<ul>\n<li>E-Mail Siche
+ rheit</li>\n<li>Cloud? Aber sicher!</li>\n</ul>\n</li>\n</ul>\n
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2023-06-15
 END:VEVENT
 BEGIN:VEVENT
-UID:84c5cba3-30c3-4233-b80e-1a86d9efae86
+UID:c0f53fc2-5586-4919-9a9a-4a17a8299b05
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20221213T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20221213T000000
 SUMMARY:Workshop: Löten? Löten. Löten!
-DESCRIPTION:<p>Löten lernen in geselliger Runde mit einfachen Bausätzen<
- /p>\n
+DESCRIPTION:Löten lernen in geselliger Runde mit einfachen Bausätzen\n
+X-ALT-DESC;FMTTYPE=text/html:<p>Löten lernen in geselliger Runde mit einf
+ achen Bausätzen</p>\n
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2022-12-13
 END:VEVENT
 BEGIN:VEVENT
-UID:8459759a-9197-46ad-b15d-807f19f0b088
+UID:b92a9f61-1108-46d0-a2ce-fcef053a1acc
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20221201T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20221201T000000
 SUMMARY:Mein Passwort ist sicher\, oder?
-DESCRIPTION:<p>Sicherer Umgang mit Zugängen im Internet</p>\n
+DESCRIPTION:Sicherer Umgang mit Zugängen im Internet\n
+X-ALT-DESC;FMTTYPE=text/html:<p>Sicherer Umgang mit Zugängen im Internet<
+ /p>\n
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2022-12-01
 END:VEVENT
 BEGIN:VEVENT
-UID:86a0c926-e171-4939-a994-973ff515b7aa
+UID:65daff64-564a-442c-a65d-53d8594801be
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20220616T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20220616T000000
 SUMMARY:Einstiegs-Workshop: Microcontroller Programmierung
-DESCRIPTION:<p>Wir geben einen einfachen Einstieg in die Welt der\nMicroco
- ntroller-Programmierung</p>\n
+DESCRIPTION:Wir geben einen einfachen Einstieg in die Welt der\nMicrocontr
+ oller-Programmierung\n
+X-ALT-DESC;FMTTYPE=text/html:<p>Wir geben einen einfachen Einstieg in die 
+ Welt der\nMicrocontroller-Programmierung</p>\n
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2022-06-16
 END:VEVENT
 BEGIN:VEVENT
-UID:ba793790-794b-4924-81a8-dc0600a9e470
+UID:edcae1d0-5e05-4207-a06f-9e6bfa14d4d3
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20220505T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20220505T000000
 SUMMARY:Einstiegs-Workshop: Microcontroller Programmierung
-DESCRIPTION:<p>Wir geben einen einfachen Einstieg in die Welt der\nMicroco
- ntroller-Programmierung</p>\n
+DESCRIPTION:Wir geben einen einfachen Einstieg in die Welt der\nMicrocontr
+ oller-Programmierung\n
+X-ALT-DESC;FMTTYPE=text/html:<p>Wir geben einen einfachen Einstieg in die 
+ Welt der\nMicrocontroller-Programmierung</p>\n
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2022-05-05
 END:VEVENT
 BEGIN:VEVENT
-UID:08dcde4b-2ba5-42b1-bdff-5cf73bb823c1
+UID:8b509914-8c56-46ea-86fa-ee789bc1df81
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20200206T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20200206T000000
 SUMMARY:Chaos Colloqium #1: DNS Privacy und Sicherheit
-DESCRIPTION:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos_colloquium_flyer
- _a4.pdf" target="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&lt\;/a
- &gt\;\n&lt\;a\nhref="https://media.ccc.de/v/chaoscolloquium-1-dns-privacy-
- security"\nrel="noreferer"\ntarget="_blank"</p>\n<blockquote></blockquote>
- \n<pre><code>&lt\;li&gt\;zum Video&lt\;/li&gt\;\n</code></pre>\n<p>&lt\;/a
- &gt\;\n&lt\;/ul&gt\;</p>\n
+DESCRIPTION:&lt\;ul&gt\;\n&lt\;a href="downloads/chaos_colloquium_flyer_a4
+ .pdf" target="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&lt\;/a&gt
+ \;\n&lt\;a\nhref="https://media.ccc.de/v/chaoscolloquium-1-dns-privacy-sec
+ urity"\nrel="noreferer"\ntarget="_blank"\n\n&lt\;li&gt\;zum Video&lt\;/li&
+ gt\;\n\n&lt\;/a&gt\;\n&lt\;/ul&gt\;\n
+X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
+ _colloquium_flyer_a4.pdf" target="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;
+ /li&gt\;\n&lt\;/a&gt\;\n&lt\;a\nhref="https://media.ccc.de/v/chaoscolloqui
+ um-1-dns-privacy-security"\nrel="noreferer"\ntarget="_blank"</p>\n<blockqu
+ ote></blockquote>\n<pre><code>&lt\;li&gt\;zum Video&lt\;/li&gt\;\n</code><
+ /pre>\n<p>&lt\;/a&gt\;\n&lt\;/ul&gt\;</p>\n
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2020-02-06
 END:VEVENT
 BEGIN:VEVENT
-UID:963483f0-eb27-4f78-a919-5dd7bc44f52d
+UID:c83a5819-ea87-4abf-bfc2-dc5b9a1e9309
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20200116T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20200116T000000
 SUMMARY:Vortrag zum Thema GPG-Schlüsselverteilung
+DESCRIPTION:
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2020-01-16
 END:VEVENT
 BEGIN:VEVENT
-UID:77bb4177-6589-4824-abc5-b48d816bae10
+UID:a77bdb15-a81c-47d5-a8b2-551715a8018c
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20200112T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20200112T000000
 SUMMARY:Congress Everywhere: 36c3
-DESCRIPTION:<p>Wir treffen uns um gemeinsam\, gemütlich 36c3 Talks zu guc
- ken</p>\n
+DESCRIPTION:Wir treffen uns um gemeinsam\, gemütlich 36c3 Talks zu gucken
+ \n
+X-ALT-DESC;FMTTYPE=text/html:<p>Wir treffen uns um gemeinsam\, gemütlich 
+ 36c3 Talks zu gucken</p>\n
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2020-01-12
 END:VEVENT
 BEGIN:VEVENT
-UID:e01728cd-9311-452d-a094-75288a96f287
+UID:1b39c984-fdb2-42cd-ab3f-167ae11cbb9c
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20191205T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20191205T000000
 SUMMARY:Winter Workshops
-DESCRIPTION:<p>Vorträge und Workshops:</p>\n<p>&lt\;ul&gt\;\n&lt\;li&gt\;
- Track the Trackers: Wie steht es um Privatsphäre im Internet?&lt\;/li&gt\
- ;\n&lt\;li&gt\;Computer == Männersache? Wie Hackspaces diverser werden k
- önnen&lt\;/li&gt\;\n&lt\;li&gt\;Krankenhaus IT-Security Nightmares&lt\;/l
- i&gt\;\n&lt\;li&gt\;Wie und warum ich meinen Staubsauger gehackt habe&lt\;
- /li&gt\;\n&lt\;li&gt\;Einführung in LoRaWAN&lt\;/li&gt\;\n&lt\;li&gt\;\nE
- missions API: Einfacher Zugriff auf satellitengestützte Emissionsdaten\n&
- lt\;/li&gt\;\n&lt\;/ul&gt\;</p>\n
+DESCRIPTION:Vorträge und Workshops:\n&lt\;ul&gt\;\n&lt\;li&gt\;Track the 
+ Trackers: Wie steht es um Privatsphäre im Internet?&lt\;/li&gt\;\n&lt\;li
+ &gt\;Computer == Männersache? Wie Hackspaces diverser werden können&lt\;
+ /li&gt\;\n&lt\;li&gt\;Krankenhaus IT-Security Nightmares&lt\;/li&gt\;\n&lt
+ \;li&gt\;Wie und warum ich meinen Staubsauger gehackt habe&lt\;/li&gt\;\n&
+ lt\;li&gt\;Einführung in LoRaWAN&lt\;/li&gt\;\n&lt\;li&gt\;\nEmissions AP
+ I: Einfacher Zugriff auf satellitengestützte Emissionsdaten\n&lt\;/li&gt\
+ ;\n&lt\;/ul&gt\;\n
+X-ALT-DESC;FMTTYPE=text/html:<p>Vorträge und Workshops:</p>\n<p>&lt\;ul&g
+ t\;\n&lt\;li&gt\;Track the Trackers: Wie steht es um Privatsphäre im Inte
+ rnet?&lt\;/li&gt\;\n&lt\;li&gt\;Computer == Männersache? Wie Hackspaces d
+ iverser werden können&lt\;/li&gt\;\n&lt\;li&gt\;Krankenhaus IT-Security N
+ ightmares&lt\;/li&gt\;\n&lt\;li&gt\;Wie und warum ich meinen Staubsauger g
+ ehackt habe&lt\;/li&gt\;\n&lt\;li&gt\;Einführung in LoRaWAN&lt\;/li&gt\;\
+ n&lt\;li&gt\;\nEmissions API: Einfacher Zugriff auf satellitengestützte E
+ missionsdaten\n&lt\;/li&gt\;\n&lt\;/ul&gt\;</p>\n
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2019-12-05
 END:VEVENT
 BEGIN:VEVENT
-UID:f033fb62-0f81-449e-8456-8ff2f55d4abd
+UID:0b53aa6a-32ce-4271-afc9-e63b38ec384c
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20190919T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20190919T000000
 SUMMARY:Kernfusion - Energiequelle der Zukunft?
+DESCRIPTION:
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2019-09-19
 END:VEVENT
 BEGIN:VEVENT
-UID:6b3b1dab-60b8-4bdf-947c-70b3ffbe6fd9
+UID:3779e4ba-b170-4d56-bece-d47ca77df4f9
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20190118T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20190118T000000
 SUMMARY:chaOStalk #4: Kunstliche Intelligenz & Neuronale Netze
-DESCRIPTION:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaostalk4_a4.pdf" tar
- get="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&lt\;/a&gt\;\n&lt\;
- a\nhref="https://media.ccc.de/v/chaostalk-4.1-Kuenstliche-Intelligenz"\nre
- l="noreferer"\ntarget="_blank"</p>\n<blockquote></blockquote>\n<pre><code>
- &lt\;li&gt\;zum Video (Volker Strübing)&lt\;/li&gt\;\n</code></pre>\n<p>&
- lt\;/a&gt\;\n&lt\;a\nhref="https://media.ccc.de/v/chaostalk-4.2-Kuenstlich
- e-Intelligenz"\nrel="noreferer"\ntarget="_blank"</p>\n<blockquote></blockq
- uote>\n<pre><code>&lt\;li&gt\;zum Video (Prof. Dr. Joachim Hertzberg)&lt\;
- /li&gt\;\n</code></pre>\n<p>&lt\;/a&gt\;\n&lt\;/ul&gt\;</p>\n
+DESCRIPTION:&lt\;ul&gt\;\n&lt\;a href="downloads/chaostalk4_a4.pdf" target
+ ="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&lt\;/a&gt\;\n&lt\;a\n
+ href="https://media.ccc.de/v/chaostalk-4.1-Kuenstliche-Intelligenz"\nrel="
+ noreferer"\ntarget="_blank"\n\n&lt\;li&gt\;zum Video (Volker Strübing)&lt
+ \;/li&gt\;\n\n&lt\;/a&gt\;\n&lt\;a\nhref="https://media.ccc.de/v/chaostalk
+ -4.2-Kuenstliche-Intelligenz"\nrel="noreferer"\ntarget="_blank"\n\n&lt\;li
+ &gt\;zum Video (Prof. Dr. Joachim Hertzberg)&lt\;/li&gt\;\n\n&lt\;/a&gt\;\
+ n&lt\;/ul&gt\;\n
+X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
+ talk4_a4.pdf" target="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&l
+ t\;/a&gt\;\n&lt\;a\nhref="https://media.ccc.de/v/chaostalk-4.1-Kuenstliche
+ -Intelligenz"\nrel="noreferer"\ntarget="_blank"</p>\n<blockquote></blockqu
+ ote>\n<pre><code>&lt\;li&gt\;zum Video (Volker Strübing)&lt\;/li&gt\;\n</
+ code></pre>\n<p>&lt\;/a&gt\;\n&lt\;a\nhref="https://media.ccc.de/v/chaosta
+ lk-4.2-Kuenstliche-Intelligenz"\nrel="noreferer"\ntarget="_blank"</p>\n<bl
+ ockquote></blockquote>\n<pre><code>&lt\;li&gt\;zum Video (Prof. Dr. Joachi
+ m Hertzberg)&lt\;/li&gt\;\n</code></pre>\n<p>&lt\;/a&gt\;\n&lt\;/ul&gt\;</
+ p>\n
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2019-01-18
 END:VEVENT
 BEGIN:VEVENT
-UID:bacaeeda-76b4-4a93-b301-3fb9de0c9c63
+UID:803dfc48-e579-4cdd-9701-9b0b956a23c5
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20170629T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20170629T000000
 SUMMARY:chaOStalks #3: SearchWing
-DESCRIPTION:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaostalk3_a3.pdf" tar
- get="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&lt\;/a&gt\;\n&lt\;
- a\nhref="https://media.ccc.de/v/chaostalk-3-searchwing"\nrel="noreferer"\n
- target="_blank"</p>\n<blockquote></blockquote>\n<pre><code>&lt\;li&gt\;zum
-  Video&lt\;/li&gt\;\n</code></pre>\n<p>&lt\;/a&gt\;\n&lt\;/ul&gt\;</p>\n
+DESCRIPTION:&lt\;ul&gt\;\n&lt\;a href="downloads/chaostalk3_a3.pdf" target
+ ="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&lt\;/a&gt\;\n&lt\;a\n
+ href="https://media.ccc.de/v/chaostalk-3-searchwing"\nrel="noreferer"\ntar
+ get="_blank"\n\n&lt\;li&gt\;zum Video&lt\;/li&gt\;\n\n&lt\;/a&gt\;\n&lt\;/
+ ul&gt\;\n
+X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
+ talk3_a3.pdf" target="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&l
+ t\;/a&gt\;\n&lt\;a\nhref="https://media.ccc.de/v/chaostalk-3-searchwing"\n
+ rel="noreferer"\ntarget="_blank"</p>\n<blockquote></blockquote>\n<pre><cod
+ e>&lt\;li&gt\;zum Video&lt\;/li&gt\;\n</code></pre>\n<p>&lt\;/a&gt\;\n&lt\
+ ;/ul&gt\;</p>\n
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2017-06-29
 END:VEVENT
 BEGIN:VEVENT
-UID:b6711bfe-d5ec-48a6-98a6-5f8a47764712
+UID:f19003c6-6dba-4221-b584-fbc55159c17f
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20160422T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20160422T000000
 SUMMARY:chaOStalks #2: NSAUA
-DESCRIPTION:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaostalk2_a3.pdf" tar
- get="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&lt\;/a&gt\;\n&lt\;
- a\nhref="https://media.ccc.de/v/chaostalk-2.1-NSAUA"\nrel="noreferer"\ntar
- get="_blank"</p>\n<blockquote></blockquote>\n<pre><code>&lt\;li&gt\;zum Vi
- deo (Anna Biselli)&lt\;/li&gt\;\n</code></pre>\n<p>&lt\;/a&gt\;\n&lt\;a\nh
- ref="https://media.ccc.de/v/chaostalk-2.2-NSAUA"\nrel="noreferer"\ntarget=
- "_blank"</p>\n<blockquote></blockquote>\n<pre><code>&lt\;li&gt\;zum Video 
- (Prof. Martin &amp\;quot\;maha&amp\;quot\; Haase)&lt\;/li&gt\;\n</code></p
- re>\n<p>&lt\;/a&gt\;\n&lt\;/ul&gt\;</p>\n
+DESCRIPTION:&lt\;ul&gt\;\n&lt\;a href="downloads/chaostalk2_a3.pdf" target
+ ="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&lt\;/a&gt\;\n&lt\;a\n
+ href="https://media.ccc.de/v/chaostalk-2.1-NSAUA"\nrel="noreferer"\ntarget
+ ="_blank"\n\n&lt\;li&gt\;zum Video (Anna Biselli)&lt\;/li&gt\;\n\n&lt\;/a&
+ gt\;\n&lt\;a\nhref="https://media.ccc.de/v/chaostalk-2.2-NSAUA"\nrel="nore
+ ferer"\ntarget="_blank"\n\n&lt\;li&gt\;zum Video (Prof. Martin &amp\;quot\
+ ;maha&amp\;quot\; Haase)&lt\;/li&gt\;\n\n&lt\;/a&gt\;\n&lt\;/ul&gt\;\n
+X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
+ talk2_a3.pdf" target="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&l
+ t\;/a&gt\;\n&lt\;a\nhref="https://media.ccc.de/v/chaostalk-2.1-NSAUA"\nrel
+ ="noreferer"\ntarget="_blank"</p>\n<blockquote></blockquote>\n<pre><code>&
+ lt\;li&gt\;zum Video (Anna Biselli)&lt\;/li&gt\;\n</code></pre>\n<p>&lt\;/
+ a&gt\;\n&lt\;a\nhref="https://media.ccc.de/v/chaostalk-2.2-NSAUA"\nrel="no
+ referer"\ntarget="_blank"</p>\n<blockquote></blockquote>\n<pre><code>&lt\;
+ li&gt\;zum Video (Prof. Martin &amp\;quot\;maha&amp\;quot\; Haase)&lt\;/li
+ &gt\;\n</code></pre>\n<p>&lt\;/a&gt\;\n&lt\;/ul&gt\;</p>\n
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2016-04-22
 END:VEVENT
 BEGIN:VEVENT
-UID:64dbd899-8b3b-474f-826a-3972691e1956
+UID:765fd9d0-ac3e-45ed-be5e-7f0a31b769ed
 SEQUENCE:0
-DTSTAMP:20250222T205050Z
-DTSTART:20151127T000000Z
+DTSTAMP:20250222T212024Z
+DTSTART;TZID=Europe/Berlin:20151127T000000
 SUMMARY:chaOStalks #1: Politische Lösungen für technische Probleme
-DESCRIPTION:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaostalk1_a4.pdf" tar
- get="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&lt\;/a&gt\;\n&lt\;
- a\nhref="https://media.ccc.de/v/chaostalk-1-linus-neumann"\nrel="noreferer
- "\ntarget="_blank"</p>\n<blockquote></blockquote>\n<pre><code>&lt\;li&gt\;
- zum Video&lt\;/li&gt\;\n</code></pre>\n<p>&lt\;/a&gt\;\n&lt\;/ul&gt\;</p>\
- n
+DESCRIPTION:&lt\;ul&gt\;\n&lt\;a href="downloads/chaostalk1_a4.pdf" target
+ ="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&lt\;/a&gt\;\n&lt\;a\n
+ href="https://media.ccc.de/v/chaostalk-1-linus-neumann"\nrel="noreferer"\n
+ target="_blank"\n\n&lt\;li&gt\;zum Video&lt\;/li&gt\;\n\n&lt\;/a&gt\;\n&lt
+ \;/ul&gt\;\n
+X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
+ talk1_a4.pdf" target="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&l
+ t\;/a&gt\;\n&lt\;a\nhref="https://media.ccc.de/v/chaostalk-1-linus-neumann
+ "\nrel="noreferer"\ntarget="_blank"</p>\n<blockquote></blockquote>\n<pre><
+ code>&lt\;li&gt\;zum Video&lt\;/li&gt\;\n</code></pre>\n<p>&lt\;/a&gt\;\n&
+ lt\;/ul&gt\;</p>\n
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2015-11-27
 END:VEVENT
 END:VCALENDAR
