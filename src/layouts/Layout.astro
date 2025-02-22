@@ -8,6 +8,7 @@ import Navigation from "../components/Navigation.astro";
 const { title } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
+const { frontmatter } = Astro.props;
 ---
 
 <script is:inline>
@@ -35,7 +36,7 @@ const lang = getLangFromUrl(Astro.url);
 </script>
 
 <html lang={lang}>
-  <Head title={title} />
+  <Head title={title ?? frontmatter?.title} />
   <body>
     <div class="min-h-screen flex sm:justify-center px-3">
       <div class="flex flex-col min-h-screen">
