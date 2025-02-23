@@ -9,9 +9,9 @@ X-WR-TIMEZONE:Europe/Berlin
 REFRESH-INTERVAL;VALUE=DURATION:PT1H
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:78f59216-fa83-4ae6-95a2-c96d4cafcbc9
+UID:810a607a-60f3-4b39-9acf-140e9fe87b06
 SEQUENCE:0
-DTSTAMP:20250223T180004
+DTSTAMP:20250223T182828
 DTSTART;TZID=Europe/Berlin:20241205T190000
 DTEND;TZID=Europe/Berlin:20241205T230000
 RRULE:FREQ=WEEKLY
@@ -23,101 +23,119 @@ DESCRIPTION:Das wöchentliche Treffen findet jeden Donnerstag um 19:00 Uhr
   statt.
 END:VEVENT
 BEGIN:VEVENT
-UID:6ca54e72-3e99-4b73-a994-e396305c0e0f
+UID:9379dfaa-2150-46b5-9ee1-a2d172246f86
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20240926T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20240926
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:Programmieren lernen: Pixelflut Basics
 DESCRIPTION:Lernt Python in einem spielerischem Programmier-Workshop\n
 X-ALT-DESC;FMTTYPE=text/html:<p>Lernt Python in einem spielerischem Progra
  mmier-Workshop</p>\n
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2024-09-26
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2024-09-26
 END:VEVENT
 BEGIN:VEVENT
-UID:f2da3f3c-e0f5-4301-bd40-21b644a214d9
+UID:f0907c44-2c2e-4def-a742-429ea9b47e6b
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20240302T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20240302
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:Tag des offenen Hackspaces
 DESCRIPTION:Kommt vorbei und besucht uns im Rabbithole\n
 X-ALT-DESC;FMTTYPE=text/html:<p>Kommt vorbei und besucht uns im Rabbithole
  </p>\n
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2024-03-02
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2024-03-02
 END:VEVENT
 BEGIN:VEVENT
-UID:1097d042-ede1-45f8-8d99-250596800426
+UID:a70d9a1a-aa77-420d-91a5-016f96344069
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20231207T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20231207
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:Workshop: Löten!
 DESCRIPTION:Löten lernen in geselliger Runde mit einfachen Bausätzen\n
 X-ALT-DESC;FMTTYPE=text/html:<p>Löten lernen in geselliger Runde mit einf
  achen Bausätzen</p>\n
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2023-12-07
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2023-12-07
 END:VEVENT
 BEGIN:VEVENT
-UID:16b049e4-45c3-424b-966c-b7c3e4b2354c
+UID:0966d1e9-8522-416e-97fd-b9af8bee2bed
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20230615T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20230615
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:Workshop: Digitaler Selbstschutz
 DESCRIPTION:\nMobile Apps\n\nE-Mail Sicherheit\nCloud? Aber sicher!\n\n\n\
  n
 X-ALT-DESC;FMTTYPE=text/html:<ul>\n<li>Mobile Apps\n<ul>\n<li>E-Mail Siche
  rheit</li>\n<li>Cloud? Aber sicher!</li>\n</ul>\n</li>\n</ul>\n
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2023-06-15
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2023-06-15
 END:VEVENT
 BEGIN:VEVENT
-UID:53661e27-6eca-4a86-a45f-0812fb71f8e2
+UID:c678d636-2cb6-4714-9dce-823c1e8e1f3f
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20221213T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20221213
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:Workshop: Löten? Löten. Löten!
 DESCRIPTION:Löten lernen in geselliger Runde mit einfachen Bausätzen\n
 X-ALT-DESC;FMTTYPE=text/html:<p>Löten lernen in geselliger Runde mit einf
  achen Bausätzen</p>\n
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2022-12-13
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2022-12-13
 END:VEVENT
 BEGIN:VEVENT
-UID:6ce0c2f9-87ea-43f2-b0a8-202c38fedf2c
+UID:eb5ffa7d-e5da-4404-81a3-b8b684e79dbb
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20221201T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20221201
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:Mein Passwort ist sicher\, oder?
 DESCRIPTION:Sicherer Umgang mit Zugängen im Internet\n
 X-ALT-DESC;FMTTYPE=text/html:<p>Sicherer Umgang mit Zugängen im Internet<
  /p>\n
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2022-12-01
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2022-12-01
 END:VEVENT
 BEGIN:VEVENT
-UID:00ea39f8-bf70-40b8-a5de-183bc6d90b1c
+UID:aa601c45-789e-4114-add1-277e91622c5f
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20220616T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20220616
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:Einstiegs-Workshop: Microcontroller Programmierung
 DESCRIPTION:Wir geben einen einfachen Einstieg in die Welt der\nMicrocontr
  oller-Programmierung\n
 X-ALT-DESC;FMTTYPE=text/html:<p>Wir geben einen einfachen Einstieg in die 
  Welt der\nMicrocontroller-Programmierung</p>\n
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2022-06-16
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2022-06-16
 END:VEVENT
 BEGIN:VEVENT
-UID:e5f7155c-44a8-4aae-9fba-6ab365aa69af
+UID:11536b9b-6a59-429a-9f31-db710db1f6e3
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20220505T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20220505
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:Einstiegs-Workshop: Microcontroller Programmierung
 DESCRIPTION:Wir geben einen einfachen Einstieg in die Welt der\nMicrocontr
  oller-Programmierung\n
 X-ALT-DESC;FMTTYPE=text/html:<p>Wir geben einen einfachen Einstieg in die 
  Welt der\nMicrocontroller-Programmierung</p>\n
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2022-05-05
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2022-05-05
 END:VEVENT
 BEGIN:VEVENT
-UID:86101d5a-cebb-4306-adea-c07b7209c005
+UID:e1713bb1-1144-46ae-8f36-c6408fe513dd
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20200206T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20200206
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:Chaos Colloqium #1: DNS Privacy und Sicherheit
 DESCRIPTION:&lt\;ul&gt\;\n&lt\;a href="downloads/chaos_colloquium_flyer_a4
  .pdf" target="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&lt\;/a&gt
@@ -130,34 +148,40 @@ X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
  um-1-dns-privacy-security"\nrel="noreferer"\ntarget="_blank"</p>\n<blockqu
  ote></blockquote>\n<pre><code>&lt\;li&gt\;zum Video&lt\;/li&gt\;\n</code><
  /pre>\n<p>&lt\;/a&gt\;\n&lt\;/ul&gt\;</p>\n
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2020-02-06
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2020-02-06
 END:VEVENT
 BEGIN:VEVENT
-UID:663d8bed-dc5e-46b7-82aa-b885b6745755
+UID:b344571e-1d53-45db-a1af-85f2f3f10032
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20200116T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20200116
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:Vortrag zum Thema GPG-Schlüsselverteilung
 DESCRIPTION:
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2020-01-16
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2020-01-16
 END:VEVENT
 BEGIN:VEVENT
-UID:3d922ace-7c45-4350-8e97-691336db71c9
+UID:9aa1144d-9aef-4e43-9910-ac8d682a2be8
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20200112T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20200112
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:Congress Everywhere: 36c3
 DESCRIPTION:Wir treffen uns um gemeinsam\, gemütlich 36c3 Talks zu gucken
  \n
 X-ALT-DESC;FMTTYPE=text/html:<p>Wir treffen uns um gemeinsam\, gemütlich 
  36c3 Talks zu gucken</p>\n
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2020-01-12
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2020-01-12
 END:VEVENT
 BEGIN:VEVENT
-UID:90e37590-fb07-4251-8dd0-db03a8e1335e
+UID:c8b9e355-0300-4b5c-8b7a-3be7ddede9b6
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20191205T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20191205
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:Winter Workshops
 DESCRIPTION:Vorträge und Workshops:\n&lt\;ul&gt\;\n&lt\;li&gt\;Track the 
  Trackers: Wie steht es um Privatsphäre im Internet?&lt\;/li&gt\;\n&lt\;li
@@ -175,22 +199,26 @@ X-ALT-DESC;FMTTYPE=text/html:<p>Vorträge und Workshops:</p>\n<p>&lt\;ul&g
  ehackt habe&lt\;/li&gt\;\n&lt\;li&gt\;Einführung in LoRaWAN&lt\;/li&gt\;\
  n&lt\;li&gt\;\nEmissions API: Einfacher Zugriff auf satellitengestützte E
  missionsdaten\n&lt\;/li&gt\;\n&lt\;/ul&gt\;</p>\n
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2019-12-05
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2019-12-05
 END:VEVENT
 BEGIN:VEVENT
-UID:3889dd90-9220-43bc-9c24-211bcc264b6e
+UID:16416242-d7e7-438c-b9c2-6884934475bc
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20190919T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20190919
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:Kernfusion - Energiequelle der Zukunft?
 DESCRIPTION:
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2019-09-19
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2019-09-19
 END:VEVENT
 BEGIN:VEVENT
-UID:6320ccef-eabf-4301-8e25-5622c86d5282
+UID:afa66e81-ca98-4d0a-9d69-8c712e79f23a
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20190118T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20190118
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:chaOStalk #4: Kunstliche Intelligenz & Neuronale Netze
 DESCRIPTION:&lt\;ul&gt\;\n&lt\;a href="downloads/chaostalk4_a4.pdf" target
  ="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&lt\;/a&gt\;\n&lt\;a\n
@@ -210,13 +238,15 @@ X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
  ockquote></blockquote>\n<pre><code>&lt\;li&gt\;zum Video (Prof. Dr. Joachi
  m Hertzberg)&lt\;/li&gt\;\n</code></pre>\n<p>&lt\;/a&gt\;\n&lt\;/ul&gt\;</
  p>\n
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2019-01-18
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2019-01-18
 END:VEVENT
 BEGIN:VEVENT
-UID:612747cb-21f2-4ec4-b9f7-c2e754c1e978
+UID:dc5f5625-acd9-41af-bbda-76f961495ca5
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20170629T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20170629
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:chaOStalks #3: SearchWing
 DESCRIPTION:&lt\;ul&gt\;\n&lt\;a href="downloads/chaostalk3_a3.pdf" target
  ="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&lt\;/a&gt\;\n&lt\;a\n
@@ -229,13 +259,15 @@ X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
  rel="noreferer"\ntarget="_blank"</p>\n<blockquote></blockquote>\n<pre><cod
  e>&lt\;li&gt\;zum Video&lt\;/li&gt\;\n</code></pre>\n<p>&lt\;/a&gt\;\n&lt\
  ;/ul&gt\;</p>\n
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2017-06-29
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2017-06-29
 END:VEVENT
 BEGIN:VEVENT
-UID:a841c3b0-e8bd-4111-92dd-4baa58a50931
+UID:8f40f1d3-391e-476e-8edc-1f9744ba7cab
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20160422T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20160422
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:chaOStalks #2: NSAUA
 DESCRIPTION:&lt\;ul&gt\;\n&lt\;a href="downloads/chaostalk2_a3.pdf" target
  ="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&lt\;/a&gt\;\n&lt\;a\n
@@ -253,13 +285,15 @@ X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
  referer"\ntarget="_blank"</p>\n<blockquote></blockquote>\n<pre><code>&lt\;
  li&gt\;zum Video (Prof. Martin &amp\;quot\;maha&amp\;quot\; Haase)&lt\;/li
  &gt\;\n</code></pre>\n<p>&lt\;/a&gt\;\n&lt\;/ul&gt\;</p>\n
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2016-04-22
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2016-04-22
 END:VEVENT
 BEGIN:VEVENT
-UID:6f4dd9dd-5e02-4be2-aecc-c0d7dbdbdf45
+UID:c07dee59-e9fb-4551-be85-6eb1b1668394
 SEQUENCE:0
-DTSTAMP:20250223T180004
-DTSTART;TZID=Europe/Berlin:20151127T000000
+DTSTAMP:20250223T182828
+DTSTART;VALUE=DATE:20151127
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:chaOStalks #1: Politische Lösungen für technische Probleme
 DESCRIPTION:&lt\;ul&gt\;\n&lt\;a href="downloads/chaostalk1_a4.pdf" target
  ="_blank"&gt\;\n&lt\;li&gt\;zum Flyer&lt\;/li&gt\;\n&lt\;/a&gt\;\n&lt\;a\n
@@ -272,6 +306,6 @@ X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
  "\nrel="noreferer"\ntarget="_blank"</p>\n<blockquote></blockquote>\n<pre><
  code>&lt\;li&gt\;zum Video&lt\;/li&gt\;\n</code></pre>\n<p>&lt\;/a&gt\;\n&
  lt\;/ul&gt\;</p>\n
-URL;VALUE=URI:https://ctreffos.github.io/about#de/2015-11-27
+URL;VALUE=URI:https://ctreffos.github.io//deabout#2015-11-27
 END:VEVENT
 END:VCALENDAR
