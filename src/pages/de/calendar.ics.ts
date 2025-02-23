@@ -6,6 +6,7 @@ import ical, {
   ICalEventRepeatingFreq,
   type ICalDateTimeValue,
   type ICalDescription,
+  type ICalLocation,
 } from "ical-generator";
 const parser = new MarkdownIt();
 
@@ -16,19 +17,25 @@ export async function GET(context: { site: string }) {
     .toSorted((a, b) => b.data.startDate.getTime() - a.data.startDate.getTime())
     .filter((item) => item.slug.startsWith(`${lang}/`));
 
-  const calendar = ical({ name: "Chaostreff Osnabrück e.V" });
-
-  // A method is required for outlook to display event as an invitation
-  calendar.method(ICalCalendarMethod.REQUEST);
+  const calendar = ical({
+    name: "Chaostreff Osnabrück e.V",
+    timezone: "Europe/Berlin",
+    method: ICalCalendarMethod.PUBLISH,
+    ttl: 60 * 60,
+  });
 
   calendar.createEvent({
     start: new Date(2024, 11, 5, 19),
     end: new Date(2024, 11, 5, 23),
     summary: "Chaostreff",
     description: {
-      plain: "Das wöchentliche Treffen jeden Donnerstag um 19:00 Uhr statt.",
+      plain:
+        "Das wöchentliche Treffen findet jeden Donnerstag um 19:00 Uhr statt.",
     } as ICalDescription,
-    location: "Uni AStA Osnabrück, Alte Münze 12, 49074 Osnabrück",
+    location: {
+      title: "Uni AStA Osnabrück",
+      address: "Alte Münze 12, 49074 Osnabrück, Deutschland",
+    } as ICalLocation,
     repeating: {
       freq: ICalEventRepeatingFreq.WEEKLY,
       exclude: [new Date(2024, 11, 26, 19)] as ICalDateTimeValue[],
