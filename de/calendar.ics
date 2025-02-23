@@ -1,25 +1,31 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//sebbo.net//ical-generator//EN
-METHOD:REQUEST
+METHOD:PUBLISH
 NAME:Chaostreff Osnabrück e.V
 X-WR-CALNAME:Chaostreff Osnabrück e.V
+TIMEZONE-ID:Europe/Berlin
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:ad8e6620-925c-4064-9765-3fb0c9476a98
+UID:78f59216-fa83-4ae6-95a2-c96d4cafcbc9
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20241205T190000
 DTEND;TZID=Europe/Berlin:20241205T230000
 RRULE:FREQ=WEEKLY
 EXDATE;TZID=Europe/Berlin:20241226T190000
 SUMMARY:Chaostreff
-LOCATION:Uni AStA Osnabrück\, Alte Münze 12\, 49074 Osnabrück
-DESCRIPTION:Das wöchentliche Treffen jeden Donnerstag um 19:00 Uhr statt.
+LOCATION:Uni AStA Osnabrück\nAlte Münze 12\, 49074 Osnabrück\, Deutschl
+ and
+DESCRIPTION:Das wöchentliche Treffen findet jeden Donnerstag um 19:00 Uhr
+  statt.
 END:VEVENT
 BEGIN:VEVENT
-UID:9be0bdbb-42e5-429b-9f30-2ac2941a244b
+UID:6ca54e72-3e99-4b73-a994-e396305c0e0f
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20240926T000000
 SUMMARY:Programmieren lernen: Pixelflut Basics
 DESCRIPTION:Lernt Python in einem spielerischem Programmier-Workshop\n
@@ -28,9 +34,9 @@ X-ALT-DESC;FMTTYPE=text/html:<p>Lernt Python in einem spielerischem Progra
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2024-09-26
 END:VEVENT
 BEGIN:VEVENT
-UID:ff9ea946-bf4b-499b-9742-b8cafabaae30
+UID:f2da3f3c-e0f5-4301-bd40-21b644a214d9
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20240302T000000
 SUMMARY:Tag des offenen Hackspaces
 DESCRIPTION:Kommt vorbei und besucht uns im Rabbithole\n
@@ -39,9 +45,9 @@ X-ALT-DESC;FMTTYPE=text/html:<p>Kommt vorbei und besucht uns im Rabbithole
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2024-03-02
 END:VEVENT
 BEGIN:VEVENT
-UID:da3a6800-3135-4ef5-ae72-a22bafa473c3
+UID:1097d042-ede1-45f8-8d99-250596800426
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20231207T000000
 SUMMARY:Workshop: Löten!
 DESCRIPTION:Löten lernen in geselliger Runde mit einfachen Bausätzen\n
@@ -50,9 +56,9 @@ X-ALT-DESC;FMTTYPE=text/html:<p>Löten lernen in geselliger Runde mit einf
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2023-12-07
 END:VEVENT
 BEGIN:VEVENT
-UID:90dc6405-ab4f-42ec-9862-8ebd26a8b812
+UID:16b049e4-45c3-424b-966c-b7c3e4b2354c
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20230615T000000
 SUMMARY:Workshop: Digitaler Selbstschutz
 DESCRIPTION:\nMobile Apps\n\nE-Mail Sicherheit\nCloud? Aber sicher!\n\n\n\
@@ -62,9 +68,9 @@ X-ALT-DESC;FMTTYPE=text/html:<ul>\n<li>Mobile Apps\n<ul>\n<li>E-Mail Siche
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2023-06-15
 END:VEVENT
 BEGIN:VEVENT
-UID:e9f6c5c9-667b-41bd-bc1b-1468712d7695
+UID:53661e27-6eca-4a86-a45f-0812fb71f8e2
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20221213T000000
 SUMMARY:Workshop: Löten? Löten. Löten!
 DESCRIPTION:Löten lernen in geselliger Runde mit einfachen Bausätzen\n
@@ -73,9 +79,9 @@ X-ALT-DESC;FMTTYPE=text/html:<p>Löten lernen in geselliger Runde mit einf
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2022-12-13
 END:VEVENT
 BEGIN:VEVENT
-UID:fe588057-8f4f-4bb1-9321-7c50e8a38d46
+UID:6ce0c2f9-87ea-43f2-b0a8-202c38fedf2c
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20221201T000000
 SUMMARY:Mein Passwort ist sicher\, oder?
 DESCRIPTION:Sicherer Umgang mit Zugängen im Internet\n
@@ -84,9 +90,9 @@ X-ALT-DESC;FMTTYPE=text/html:<p>Sicherer Umgang mit Zugängen im Internet<
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2022-12-01
 END:VEVENT
 BEGIN:VEVENT
-UID:e0c60b5b-4197-4d7f-9116-9350f5d13b7d
+UID:00ea39f8-bf70-40b8-a5de-183bc6d90b1c
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20220616T000000
 SUMMARY:Einstiegs-Workshop: Microcontroller Programmierung
 DESCRIPTION:Wir geben einen einfachen Einstieg in die Welt der\nMicrocontr
@@ -96,9 +102,9 @@ X-ALT-DESC;FMTTYPE=text/html:<p>Wir geben einen einfachen Einstieg in die
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2022-06-16
 END:VEVENT
 BEGIN:VEVENT
-UID:d1d77f63-d729-42a0-9db6-5e6f5afa6aa5
+UID:e5f7155c-44a8-4aae-9fba-6ab365aa69af
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20220505T000000
 SUMMARY:Einstiegs-Workshop: Microcontroller Programmierung
 DESCRIPTION:Wir geben einen einfachen Einstieg in die Welt der\nMicrocontr
@@ -108,9 +114,9 @@ X-ALT-DESC;FMTTYPE=text/html:<p>Wir geben einen einfachen Einstieg in die
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2022-05-05
 END:VEVENT
 BEGIN:VEVENT
-UID:75ffd2a8-f73a-4f4b-9ad1-1219ba315913
+UID:86101d5a-cebb-4306-adea-c07b7209c005
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20200206T000000
 SUMMARY:Chaos Colloqium #1: DNS Privacy und Sicherheit
 DESCRIPTION:&lt\;ul&gt\;\n&lt\;a href="downloads/chaos_colloquium_flyer_a4
@@ -127,18 +133,18 @@ X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2020-02-06
 END:VEVENT
 BEGIN:VEVENT
-UID:ab392667-69d1-4706-a2d2-46aded262879
+UID:663d8bed-dc5e-46b7-82aa-b885b6745755
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20200116T000000
 SUMMARY:Vortrag zum Thema GPG-Schlüsselverteilung
 DESCRIPTION:
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2020-01-16
 END:VEVENT
 BEGIN:VEVENT
-UID:9db88765-5f2e-425c-971b-0bcd81951670
+UID:3d922ace-7c45-4350-8e97-691336db71c9
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20200112T000000
 SUMMARY:Congress Everywhere: 36c3
 DESCRIPTION:Wir treffen uns um gemeinsam\, gemütlich 36c3 Talks zu gucken
@@ -148,9 +154,9 @@ X-ALT-DESC;FMTTYPE=text/html:<p>Wir treffen uns um gemeinsam\, gemütlich
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2020-01-12
 END:VEVENT
 BEGIN:VEVENT
-UID:555ee2fd-58c0-4a86-8a4d-a93955e7f9c4
+UID:90e37590-fb07-4251-8dd0-db03a8e1335e
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20191205T000000
 SUMMARY:Winter Workshops
 DESCRIPTION:Vorträge und Workshops:\n&lt\;ul&gt\;\n&lt\;li&gt\;Track the 
@@ -172,18 +178,18 @@ X-ALT-DESC;FMTTYPE=text/html:<p>Vorträge und Workshops:</p>\n<p>&lt\;ul&g
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2019-12-05
 END:VEVENT
 BEGIN:VEVENT
-UID:2de7e4f9-d232-41a9-a9c1-2cee09dfe252
+UID:3889dd90-9220-43bc-9c24-211bcc264b6e
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20190919T000000
 SUMMARY:Kernfusion - Energiequelle der Zukunft?
 DESCRIPTION:
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2019-09-19
 END:VEVENT
 BEGIN:VEVENT
-UID:50313e3d-2b78-42da-83ac-dca56b946f5d
+UID:6320ccef-eabf-4301-8e25-5622c86d5282
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20190118T000000
 SUMMARY:chaOStalk #4: Kunstliche Intelligenz & Neuronale Netze
 DESCRIPTION:&lt\;ul&gt\;\n&lt\;a href="downloads/chaostalk4_a4.pdf" target
@@ -207,9 +213,9 @@ X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2019-01-18
 END:VEVENT
 BEGIN:VEVENT
-UID:1d254309-42b1-4e57-ae5d-2cc552ebe552
+UID:612747cb-21f2-4ec4-b9f7-c2e754c1e978
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20170629T000000
 SUMMARY:chaOStalks #3: SearchWing
 DESCRIPTION:&lt\;ul&gt\;\n&lt\;a href="downloads/chaostalk3_a3.pdf" target
@@ -226,9 +232,9 @@ X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2017-06-29
 END:VEVENT
 BEGIN:VEVENT
-UID:a2f1ab03-0869-4991-98c8-67b93949e546
+UID:a841c3b0-e8bd-4111-92dd-4baa58a50931
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20160422T000000
 SUMMARY:chaOStalks #2: NSAUA
 DESCRIPTION:&lt\;ul&gt\;\n&lt\;a href="downloads/chaostalk2_a3.pdf" target
@@ -250,9 +256,9 @@ X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
 URL;VALUE=URI:https://ctreffos.github.io/about#de/2016-04-22
 END:VEVENT
 BEGIN:VEVENT
-UID:8d4643fc-df45-480a-b6eb-d415e8b2c560
+UID:6f4dd9dd-5e02-4be2-aecc-c0d7dbdbdf45
 SEQUENCE:0
-DTSTAMP:20250223T174242Z
+DTSTAMP:20250223T180004
 DTSTART;TZID=Europe/Berlin:20151127T000000
 SUMMARY:chaOStalks #1: Politische Lösungen für technische Probleme
 DESCRIPTION:&lt\;ul&gt\;\n&lt\;a href="downloads/chaostalk1_a4.pdf" target
