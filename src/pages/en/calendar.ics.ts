@@ -68,8 +68,8 @@ export async function GET(context: { site: string }) {
             title: event.data.locationName,
             address: event.data.locationAddress,
           } as ICalLocation)),
-      url: `${context.site}/${event.slug.split("/")[0]}about#${
-        event.slug.split("/")[1]
+      url: `${context.site}${import.meta.env.BASE_URL}${lang}/about#${
+        event.slug
       }`,
       timezone: "Europe/Berlin",
     });
