@@ -9,9 +9,9 @@ X-WR-TIMEZONE:Europe/Berlin
 REFRESH-INTERVAL;VALUE=DURATION:PT1H
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:c03df757-6479-45f4-8b2b-37c65473d17b
+UID:022d824a-b242-42e2-8eab-25b305c0699e
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;TZID=Europe/Berlin:20241205T190000
 DTEND;TZID=Europe/Berlin:20241205T230000
 RRULE:FREQ=WEEKLY
@@ -23,9 +23,9 @@ DESCRIPTION:Das wöchentliche Treffen findet jeden Donnerstag um 19:00 Uhr
   statt.
 END:VEVENT
 BEGIN:VEVENT
-UID:005fbf33-d4c4-455f-bbed-33720e00053e
+UID:8195de06-6d5c-4df0-86d4-8ec2b83a09a2
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20240926
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
@@ -33,13 +33,13 @@ SUMMARY:Programmieren lernen: Pixelflut Basics
 DESCRIPTION:Lernt Python in einem spielerischem Programmier-Workshop\n
 X-ALT-DESC;FMTTYPE=text/html:<p>Lernt Python in einem spielerischem Progra
  mmier-Workshop</p>\n
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2024-09-26
 END:VEVENT
 BEGIN:VEVENT
-UID:633371cd-8091-4d9f-95f8-d711a34294d9
+UID:e517119c-9b90-4667-a832-37b320c3abd9
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20240302
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
@@ -47,13 +47,13 @@ SUMMARY:Tag des offenen Hackspaces
 DESCRIPTION:Kommt vorbei und besucht uns im Rabbithole\n
 X-ALT-DESC;FMTTYPE=text/html:<p>Kommt vorbei und besucht uns im Rabbithole
  </p>\n
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2024-03-02
 END:VEVENT
 BEGIN:VEVENT
-UID:5faa3b81-607f-4486-b694-e4b61f009945
+UID:601870ca-4275-4ac5-a0b1-2773150e0aad
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20231207
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
@@ -61,13 +61,13 @@ SUMMARY:Workshop: Löten!
 DESCRIPTION:Löten lernen in geselliger Runde mit einfachen Bausätzen\n
 X-ALT-DESC;FMTTYPE=text/html:<p>Löten lernen in geselliger Runde mit einf
  achen Bausätzen</p>\n
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2023-12-07
 END:VEVENT
 BEGIN:VEVENT
-UID:b66a629b-4241-40bd-a8c2-f4b5746961d6
+UID:583833ab-dab1-40a6-8ec2-e98a3474e015
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20230615
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
@@ -76,13 +76,13 @@ DESCRIPTION:\nMobile Apps\n\nE-Mail Sicherheit\nCloud? Aber sicher!\n\n\n\
  n
 X-ALT-DESC;FMTTYPE=text/html:<ul>\n<li>Mobile Apps\n<ul>\n<li>E-Mail Siche
  rheit</li>\n<li>Cloud? Aber sicher!</li>\n</ul>\n</li>\n</ul>\n
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2023-06-15
 END:VEVENT
 BEGIN:VEVENT
-UID:1b93018a-aaa1-4cc7-af61-5ac6cfc33079
+UID:a2667adc-68cd-4807-913b-a53c3391fa9c
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20221213
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
@@ -90,13 +90,13 @@ SUMMARY:Workshop: Löten? Löten. Löten!
 DESCRIPTION:Löten lernen in geselliger Runde mit einfachen Bausätzen\n
 X-ALT-DESC;FMTTYPE=text/html:<p>Löten lernen in geselliger Runde mit einf
  achen Bausätzen</p>\n
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2022-12-13
 END:VEVENT
 BEGIN:VEVENT
-UID:147a23a9-817e-4243-912f-fe706e68cb29
+UID:9b7abe3b-01e0-4045-a0cc-697d32e8113f
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20221201
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
@@ -104,13 +104,13 @@ SUMMARY:Mein Passwort ist sicher\, oder?
 DESCRIPTION:Sicherer Umgang mit Zugängen im Internet\n
 X-ALT-DESC;FMTTYPE=text/html:<p>Sicherer Umgang mit Zugängen im Internet<
  /p>\n
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2022-12-01
 END:VEVENT
 BEGIN:VEVENT
-UID:1f0d9e4e-bfad-460c-84a2-1f0bc34c318a
+UID:3a100cae-a682-48af-aeda-660b29860ebd
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20220616
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
@@ -119,13 +119,13 @@ DESCRIPTION:Wir geben einen einfachen Einstieg in die Welt der\nMicrocontr
  oller-Programmierung\n
 X-ALT-DESC;FMTTYPE=text/html:<p>Wir geben einen einfachen Einstieg in die 
  Welt der\nMicrocontroller-Programmierung</p>\n
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2022-06-16
 END:VEVENT
 BEGIN:VEVENT
-UID:323f700c-eb89-47c0-a6e1-e79de6b7bad0
+UID:bf54e072-7733-4e8e-a39a-606f7b33d70f
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20220505
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
@@ -134,13 +134,13 @@ DESCRIPTION:Wir geben einen einfachen Einstieg in die Welt der\nMicrocontr
  oller-Programmierung\n
 X-ALT-DESC;FMTTYPE=text/html:<p>Wir geben einen einfachen Einstieg in die 
  Welt der\nMicrocontroller-Programmierung</p>\n
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2022-05-05
 END:VEVENT
 BEGIN:VEVENT
-UID:0af72526-c097-4bc0-9c60-abc9818fe9df
+UID:78584fae-d53d-4bd6-9f33-d4b155d9cd1e
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20200206
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
@@ -156,25 +156,25 @@ X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
  um-1-dns-privacy-security"\nrel="noreferer"\ntarget="_blank"</p>\n<blockqu
  ote></blockquote>\n<pre><code>&lt\;li&gt\;zum Video&lt\;/li&gt\;\n</code><
  /pre>\n<p>&lt\;/a&gt\;\n&lt\;/ul&gt\;</p>\n
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2020-02-06
 END:VEVENT
 BEGIN:VEVENT
-UID:a6f091f8-845c-4706-8b17-f440a090abc5
+UID:ca6c4dfa-0f71-4f24-81a6-6b91540483cc
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20200116
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:Vortrag zum Thema GPG-Schlüsselverteilung
 DESCRIPTION:
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2020-01-16
 END:VEVENT
 BEGIN:VEVENT
-UID:c8e06b9c-49b3-4e57-9416-facc1de5907e
+UID:9f41bf4c-76d0-4bf5-be9a-ba275d9f5569
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20200112
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
@@ -183,13 +183,13 @@ DESCRIPTION:Wir treffen uns um gemeinsam\, gemütlich 36c3 Talks zu gucken
  \n
 X-ALT-DESC;FMTTYPE=text/html:<p>Wir treffen uns um gemeinsam\, gemütlich 
  36c3 Talks zu gucken</p>\n
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2020-01-12
 END:VEVENT
 BEGIN:VEVENT
-UID:e93a1287-1875-4344-a76d-e679c7ea2ecb
+UID:fefdbfa9-f70b-412a-a2ec-f71974521390
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20191205
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
@@ -210,25 +210,25 @@ X-ALT-DESC;FMTTYPE=text/html:<p>Vorträge und Workshops:</p>\n<p>&lt\;ul&g
  ehackt habe&lt\;/li&gt\;\n&lt\;li&gt\;Einführung in LoRaWAN&lt\;/li&gt\;\
  n&lt\;li&gt\;\nEmissions API: Einfacher Zugriff auf satellitengestützte E
  missionsdaten\n&lt\;/li&gt\;\n&lt\;/ul&gt\;</p>\n
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2019-12-05
 END:VEVENT
 BEGIN:VEVENT
-UID:d43f8715-5ed9-4e8d-b541-e8f2aeae103c
+UID:f674fd40-d4a7-4dc3-afd1-0f6c3e84f795
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20190919
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
 SUMMARY:Kernfusion - Energiequelle der Zukunft?
 DESCRIPTION:
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2019-09-19
 END:VEVENT
 BEGIN:VEVENT
-UID:628b40e0-93ff-42e1-8b0c-fd90d279b3f2
+UID:7a5bb1f7-0899-41ba-8d32-465b1e7434a3
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20190118
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
@@ -251,13 +251,13 @@ X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
  ockquote></blockquote>\n<pre><code>&lt\;li&gt\;zum Video (Prof. Dr. Joachi
  m Hertzberg)&lt\;/li&gt\;\n</code></pre>\n<p>&lt\;/a&gt\;\n&lt\;/ul&gt\;</
  p>\n
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2019-01-18
 END:VEVENT
 BEGIN:VEVENT
-UID:4f00e08c-2f03-448a-a08c-25e8959c19ed
+UID:254b121c-ec81-44cd-a285-69c9078f8a6a
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20170629
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
@@ -273,13 +273,13 @@ X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
  rel="noreferer"\ntarget="_blank"</p>\n<blockquote></blockquote>\n<pre><cod
  e>&lt\;li&gt\;zum Video&lt\;/li&gt\;\n</code></pre>\n<p>&lt\;/a&gt\;\n&lt\
  ;/ul&gt\;</p>\n
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2017-06-29
 END:VEVENT
 BEGIN:VEVENT
-UID:0e7c0dec-95a4-4313-a134-f6acaffe5c29
+UID:60ad9a0a-4df0-45da-9a83-bf4a28b980b7
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20160422
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
@@ -300,13 +300,13 @@ X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
  referer"\ntarget="_blank"</p>\n<blockquote></blockquote>\n<pre><code>&lt\;
  li&gt\;zum Video (Prof. Martin &amp\;quot\;maha&amp\;quot\; Haase)&lt\;/li
  &gt\;\n</code></pre>\n<p>&lt\;/a&gt\;\n&lt\;/ul&gt\;</p>\n
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2016-04-22
 END:VEVENT
 BEGIN:VEVENT
-UID:f7cc3b6f-098b-4767-ae74-40c59e6bcaa7
+UID:ee695779-67de-4fba-ae5c-e37fab5c0acf
 SEQUENCE:0
-DTSTAMP:20250223T183734
+DTSTAMP:20250223T191301
 DTSTART;VALUE=DATE:20151127
 X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-MSNCALENDAR-ALLDAYEVENT:TRUE
@@ -322,7 +322,7 @@ X-ALT-DESC;FMTTYPE=text/html:<p>&lt\;ul&gt\;\n&lt\;a href="downloads/chaos
  "\nrel="noreferer"\ntarget="_blank"</p>\n<blockquote></blockquote>\n<pre><
  code>&lt\;li&gt\;zum Video&lt\;/li&gt\;\n</code></pre>\n<p>&lt\;/a&gt\;\n&
  lt\;/ul&gt\;</p>\n
-URL;VALUE=URI:https://ctreffos.github.io//ctreffos-website-astrode/about#d
+URL;VALUE=URI:https://ctreffos.github.io/ctreffos-website-astro/de/about#d
  e/2015-11-27
 END:VEVENT
 END:VCALENDAR
