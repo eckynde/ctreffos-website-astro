@@ -3,11 +3,10 @@ import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
 import ical, {
   ICalCalendarMethod,
-  ICalEventRepeatingFreq,
-  type ICalDateTimeValue,
   type ICalDescription,
-  type ICalLocation,
+  type ICalLocationWithTitle,
 } from "ical-generator";
+import { createTreffEvent } from "@/chaostreff";
 const parser = new MarkdownIt();
 
 const lang = "en";
@@ -24,23 +23,9 @@ export async function GET(context: { site: URL }) {
     ttl: 60 * 60,
   });
 
-  calendar.createEvent({
-    start: new Date(2024, 11, 5, 19),
-    end: new Date(2024, 11, 5, 23),
-    summary: "Chaostreff",
-    description: {
-      plain: "The weekly meeting takes place every Thursday at 19:00.",
-    } as ICalDescription,
-    location: {
-      title: "Uni AStA Osnabrück",
-      address: "Alte Münze 12, 49074 Osnabrück, Deutschland",
-    } as ICalLocation,
-    repeating: {
-      freq: ICalEventRepeatingFreq.WEEKLY,
-      exclude: [new Date(2024, 11, 26, 19)] as ICalDateTimeValue[],
-    },
-    timezone: "Europe/Berlin",
-  });
+  calendar.createEvent(
+    createTreffEvent("The weekly meeting takes place every Thursday at 19:00.")
+  );
 
   events.forEach((event) => {
     calendar.createEvent({
@@ -67,7 +52,7 @@ export async function GET(context: { site: URL }) {
           ({
             title: event.data.locationName,
             address: event.data.locationAddress,
-          } as ICalLocation)),
+          } as ICalLocationWithTitle)),
       url: `${context.site.origin}${import.meta.env.BASE_URL}/${lang}/about#${
         event.slug
       }`,

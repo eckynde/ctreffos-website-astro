@@ -1,6 +1,5 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { CalendarEvents } from "@/components/CalendarEvents";
 import { getLangFromUrl } from "@/i18n/utils";
 import { getCollection } from "astro:content";
 
@@ -64,7 +63,6 @@ const news = (await getCollection("news")).filter((item) =>
       to our calendar
     </a>
     .
-    <CalendarEvents lang={getLangFromUrl(Astro.url)} />
     <h3>Public Chatroom</h3>
     <ul>
       <li>

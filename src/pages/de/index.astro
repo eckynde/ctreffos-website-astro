@@ -1,14 +1,17 @@
 ---
+import { upcomingTreffs } from "@/chaostreff";
 import Layout from "../../layouts/Layout.astro";
-import { CalendarEvents } from "@/components/CalendarEvents";
 import Events from "@/components/Events.astro";
 import { getLangFromUrl } from "@/i18n/utils";
 import { getCollection } from "astro:content";
+import { Treffs } from "@/components/Treffs";
 
 const lang = getLangFromUrl(Astro.url);
 const news = (await getCollection("news")).filter((item) =>
   item.slug.startsWith(`${lang}/`)
 );
+
+const upcoming = upcomingTreffs;
 ---
 
 <Layout description="All creatures welcome!">
@@ -60,7 +63,7 @@ const news = (await getCollection("news")).filter((item) =>
       AStA der Universität Osnabrück, Alte Münze 12, 49074 Osnabrück</a
     >{" "}
     in unserem Hackspace Rabbithole.
-    <CalendarEvents lang={getLangFromUrl(Astro.url)} />
+    <Treffs treffs={upcoming} lang={getLangFromUrl(Astro.url)} />
     <h3 id="veranstaltungen">Veranstaltungen</h3>
     Alle Termine der nächsten Monate können online angesehen, als iCalendar abonniert
     oder als .ics-Datei heruntergeladen werden:{" "}

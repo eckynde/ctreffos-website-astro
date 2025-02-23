@@ -2222,7 +2222,6 @@ __metadata:
     clsx: "npm:^2.1.1"
     date-fns: "npm:^4.1.0"
     ical-generator: "npm:^8.1.1"
-    ical.js: "npm:^2.1.0"
     lucide-react: "npm:^0.475.0"
     markdown-it: "npm:^14.1.0"
     react: "npm:^19.0.0"
@@ -3200,13 +3199,6 @@ __metadata:
     rrule:
       optional: true
   checksum: 10c0/1b1e8e98da7241f75c439fd1b88d2c50f98f9619265d573a7d246a36276eb2ce6067187db5bbabc208c350624bbc74e51a9543b235526221b1e84c1cb55b8632
-  languageName: node
-  linkType: hard
-
-"ical.js@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "ical.js@npm:2.1.0"
-  checksum: 10c0/3f3050c7eedd2516fa8afa0b49fcd068579b2d15a66dd97db3b921d28665522a6592bf90c25cb9b03aa39f83becf1c8c9362fd5cec25bb3bfcbc0500c32a7fff
   languageName: node
   linkType: hard
 
