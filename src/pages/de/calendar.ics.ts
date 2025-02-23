@@ -47,6 +47,7 @@ export async function GET(context: { site: string }) {
     calendar.createEvent({
       start: event.data.startDate,
       end: event.data.endDate,
+      allDay: event.data.endDate ? false : true,
       summary: event.data.title,
       description: {
         plain:
@@ -61,8 +62,13 @@ export async function GET(context: { site: string }) {
             ? sanitizeHtml(parser.render(event.body))
             : "",
       } as ICalDescription,
-      location: event.data.location,
-      url: `${context.site}about#${event.slug}`,
+      location: {
+        title: event.data.locationName,
+        address: event.data.locationAddress,
+      } as ICalLocation,
+      url: `${context.site}/${event.slug.split("/")[0]}about#${
+        event.slug.split("/")[1]
+      }`,
       timezone: "Europe/Berlin",
     });
   });

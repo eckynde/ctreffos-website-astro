@@ -15,7 +15,8 @@ const eventsCollection = defineCollection({
     endDate: z.date().optional(),
     title: z.string(),
     speaker: z.string().optional(),
-    location: z.string().optional(),
+    locationName: z.string().optional(),
+    locationAddress: z.string().optional(),
   }),
 });
 

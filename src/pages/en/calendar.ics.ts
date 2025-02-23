@@ -4,7 +4,9 @@ import MarkdownIt from "markdown-it";
 import ical, {
   ICalCalendarMethod,
   ICalEventRepeatingFreq,
+  type ICalDateTimeValue,
   type ICalDescription,
+  type ICalLocation,
 } from "ical-generator";
 const parser = new MarkdownIt();
 
@@ -15,21 +17,27 @@ export async function GET(context: { site: string }) {
     .toSorted((a, b) => b.data.startDate.getTime() - a.data.startDate.getTime())
     .filter((item) => item.slug.startsWith(`${lang}/`));
 
-  const calendar = ical({ name: "Chaostreff Osnabrück e.V" });
-
-  // A method is required for outlook to display event as an invitation
-  calendar.method(ICalCalendarMethod.REQUEST);
+  const calendar = ical({
+    name: "Chaostreff Osnabrück e.V",
+    timezone: "Europe/Berlin",
+    method: ICalCalendarMethod.PUBLISH,
+    ttl: 60 * 60,
+  });
 
   calendar.createEvent({
-    start: new Date(2024, 8, 6, 19),
-    end: new Date(2024, 8, 6, 23),
+    start: new Date(2024, 11, 5, 19),
+    end: new Date(2024, 11, 5, 23),
     summary: "Chaostreff",
     description: {
-      plain: "Das woechentliche Treffen jeden Donnerstag um 19:00 Uhr statt.",
+      plain: "The weekly meeting takes place every Thursday at 19:00.",
     } as ICalDescription,
-    location: "Uni AStA Osnabrueck, Alte Muenze 12, 49074 Osnabrueck",
+    location: {
+      title: "Uni AStA Osnabrück",
+      address: "Alte Münze 12, 49074 Osnabrück, Deutschland",
+    } as ICalLocation,
     repeating: {
       freq: ICalEventRepeatingFreq.WEEKLY,
+      exclude: [new Date(2024, 11, 26, 19)] as ICalDateTimeValue[],
     },
     timezone: "Europe/Berlin",
   });
@@ -38,6 +46,7 @@ export async function GET(context: { site: string }) {
     calendar.createEvent({
       start: event.data.startDate,
       end: event.data.endDate,
+      allDay: event.data.endDate ? false : true,
       summary: event.data.title,
       description: {
         plain:
@@ -52,8 +61,13 @@ export async function GET(context: { site: string }) {
             ? sanitizeHtml(parser.render(event.body))
             : "",
       } as ICalDescription,
-      location: event.data.location,
-      url: `${context.site}about#${event.slug}`,
+      location: {
+        title: event.data.locationName,
+        address: event.data.locationAddress,
+      } as ICalLocation,
+      url: `${context.site}/${event.slug.split("/")[0]}about#${
+        event.slug.split("/")[1]
+      }`,
       timezone: "Europe/Berlin",
     });
   });
