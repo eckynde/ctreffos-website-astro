@@ -1,8 +1,9 @@
 import { de, enUS } from "date-fns/locale";
 import { ui, defaultLang } from "./ui";
 
-export function getLangFromUrl(url: URL) {
-  const candidates = url.pathname.split("/").filter((a) => a.length === 2);
+export function getLangFromUrl(url: URL | string) {
+  const pathname = url instanceof URL ? url.pathname : url;
+  const candidates = pathname.split("/").filter((a) => a.length === 2);
 
   if (candidates.includes("de")) {
     return "de";
