@@ -31,9 +31,9 @@ export const ui = {
     "nav.hackspace": "Hackspace",
     "nav.about": "Über uns",
     "event.speaker": "Vortragende",
-    "event.no-past": "Keine vergangenen Events",
-    "event.no-upcoming": "Keine anstehenden Events",
-    "event.past": "Vergangene Events",
-    "event.upcoming": "Anstehende Events",
+    "event.no-past": "Keine vergangenen Veranstaltungen",
+    "event.no-upcoming": "Keine anstehenden Veranstaltungen",
+    "event.past": "Vergangene Veranstaltungen",
+    "event.upcoming": "Anstehende Veranstaltungen",
   },
 } as const;
