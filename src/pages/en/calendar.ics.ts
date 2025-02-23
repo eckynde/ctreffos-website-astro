@@ -12,7 +12,7 @@ const parser = new MarkdownIt();
 
 const lang = "en";
 
-export async function GET(context: { site: string }) {
+export async function GET(context: { site: URL }) {
   const events = (await getCollection("events"))
     .toSorted((a, b) => b.data.startDate.getTime() - a.data.startDate.getTime())
     .filter((item) => item.slug.startsWith(`${lang}/`));
@@ -68,7 +68,7 @@ export async function GET(context: { site: string }) {
             title: event.data.locationName,
             address: event.data.locationAddress,
           } as ICalLocation)),
-      url: `${context.site}${import.meta.env.BASE_URL}${lang}/about#${
+      url: `${context.site.origin}${import.meta.env.BASE_URL}/${lang}/about#${
         event.slug
       }`,
       timezone: "Europe/Berlin",
