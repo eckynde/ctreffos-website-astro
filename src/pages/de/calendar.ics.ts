@@ -4,6 +4,7 @@ import MarkdownIt from "markdown-it";
 import ical, {
   ICalCalendarMethod,
   ICalEventRepeatingFreq,
+  type ICalDateTimeValue,
   type ICalDescription,
 } from "ical-generator";
 const parser = new MarkdownIt();
@@ -21,15 +22,16 @@ export async function GET(context: { site: string }) {
   calendar.method(ICalCalendarMethod.REQUEST);
 
   calendar.createEvent({
-    start: new Date(2024, 8, 6, 19),
-    end: new Date(2024, 8, 6, 23),
+    start: new Date(2024, 11, 5, 19),
+    end: new Date(2024, 11, 5, 23),
     summary: "Chaostreff",
     description: {
-      plain: "Das woechentliche Treffen jeden Donnerstag um 19:00 Uhr statt.",
+      plain: "Das wöchentliche Treffen jeden Donnerstag um 19:00 Uhr statt.",
     } as ICalDescription,
-    location: "Uni AStA Osnabrueck, Alte Muenze 12, 49074 Osnabrueck",
+    location: "Uni AStA Osnabrück, Alte Münze 12, 49074 Osnabrück",
     repeating: {
       freq: ICalEventRepeatingFreq.WEEKLY,
+      exclude: [new Date(2024, 11, 26, 19)] as ICalDateTimeValue[],
     },
     timezone: "Europe/Berlin",
   });
