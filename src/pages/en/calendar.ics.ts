@@ -61,10 +61,13 @@ export async function GET(context: { site: string }) {
             ? sanitizeHtml(parser.render(event.body))
             : "",
       } as ICalDescription,
-      location: {
-        title: event.data.locationName,
-        address: event.data.locationAddress,
-      } as ICalLocation,
+      location:
+        event.data.locationName ||
+        (event.data.locationAddress &&
+          ({
+            title: event.data.locationName,
+            address: event.data.locationAddress,
+          } as ICalLocation)),
       url: `${context.site}/${event.slug.split("/")[0]}about#${
         event.slug.split("/")[1]
       }`,
